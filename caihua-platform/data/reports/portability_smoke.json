@@ -1,0 +1,10 @@
+{
+  "fresh_path_boot": true,
+  "unicode_space_path": true,
+  "no_existing_db_required": true,
+  "entities": 967,
+  "color_paths": 6,
+  "runtime": "3.14.6",
+  "actual_os": "darwin",
+  "windows_linux_docker_not_executed": true
+}

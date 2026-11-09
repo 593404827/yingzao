@@ -1,0 +1,10 @@
+{
+  "project": "/Users/bytedance/Desktop/小论文-solo/caihua-platform",
+  "archive": "/Users/bytedance/Desktop/小论文-solo/outputs/caihua_20261108/彩画作数字互动平台_完整前后端项目.zip",
+  "active_entities": 967,
+  "active_relations": 1157,
+  "original_sha256": "7c8a4b3f5d5a1152fdd27528873176b90045d78e705d91196bc5082d9395fd58",
+  "source_snapshot_unchanged": true,
+  "tests": "13 passed; fresh Unicode/space-path boot passed",
+  "port": 18765
+}

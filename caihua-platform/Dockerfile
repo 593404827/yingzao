@@ -1,0 +1,6 @@
+FROM python:3.12-slim
+WORKDIR /app
+COPY . .
+ENV HOST=0.0.0.0 PORT=18765 PYTHONUNBUFFERED=1
+EXPOSE 18765
+CMD ["python", "run.py"]

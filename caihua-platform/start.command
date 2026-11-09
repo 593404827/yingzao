@@ -1,0 +1,9 @@
+#!/bin/bash
+cd -- "$(dirname -- "$0")" || exit 1
+if command -v python3 >/dev/null 2>&1; then
+  python3 scripts/open_browser.py &
+  exec python3 run.py
+else
+  echo "请先安装 Python 3.10 或更高版本。"
+  read -r
+fi

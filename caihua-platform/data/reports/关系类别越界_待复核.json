@@ -1,0 +1,122 @@
+[
+  {
+    "id": "A66485a0cc0e9fdf9f252",
+    "sid": "CH-048",
+    "subject": "三晕棱间装",
+    "predicate": "采用技法",
+    "object": "绿叠晕",
+    "actual_subtype": "步骤",
+    "expected": "技法",
+    "evidence": [
+      {
+        "source_sid": "CH-048",
+        "source_field": "text",
+        "quote": "当心又用绿叠晕者，深色在内",
+        "occurrence": 1,
+        "start": 26,
+        "end": 39,
+        "span_valid": true
+      }
+    ]
+  },
+  {
+    "id": "A70b1a21d9c4f2ecf7afd",
+    "sid": "CH-039",
+    "subject": "碾玉",
+    "predicate": "采用设色方法",
+    "object": "五彩遍装",
+    "actual_subtype": "装饰制度",
+    "expected": "设色方法",
+    "evidence": [
+      {
+        "source_sid": "CH-039",
+        "source_field": "text",
+        "quote": "如身内红地，即以青地作碾玉，或亦用五彩装",
+        "occurrence": 1,
+        "start": 159,
+        "end": 179,
+        "span_valid": true
+      }
+    ]
+  },
+  {
+    "id": "Aac0c67518a617c6d8161",
+    "sid": "CH-039",
+    "subject": "五彩装",
+    "predicate": "采用设色方法",
+    "object": "五彩遍装",
+    "actual_subtype": "装饰制度",
+    "expected": "设色方法",
+    "evidence": [
+      {
+        "source_sid": "CH-039",
+        "source_field": "text",
+        "quote": "如身内红地，即以青地作碾玉，或亦用五彩装",
+        "occurrence": 1,
+        "start": 159,
+        "end": 179,
+        "span_valid": true
+      }
+    ]
+  },
+  {
+    "id": "Ab46077c8967119575ebd",
+    "sid": "CH-036",
+    "subject": "华文",
+    "predicate": "使用色彩",
+    "object": "绿华",
+    "actual_subtype": "颜料",
+    "expected": "色彩",
+    "evidence": [
+      {
+        "source_sid": "CH-036",
+        "source_field": "text",
+        "quote": "青、红地，如白地上单枝条，用二绿，随墨以绿华合粉，罩以三绿、二绿节淡。",
+        "occurrence": 1,
+        "start": 124,
+        "end": 159,
+        "span_valid": true
+      }
+    ]
+  },
+  {
+    "id": "Ad7420f42ff00debf3e68",
+    "sid": "CH-048",
+    "subject": "三晕棱间装",
+    "predicate": "采用技法",
+    "object": "青叠晕",
+    "actual_subtype": "步骤",
+    "expected": "技法",
+    "evidence": [
+      {
+        "source_sid": "CH-048",
+        "source_field": "text",
+        "quote": "次以青叠晕，浅色在外",
+        "occurrence": 1,
+        "start": 15,
+        "end": 25,
+        "span_valid": true
+      }
+    ]
+  },
+  {
+    "id": "Af1c8379e16ed5ebaa54b",
+    "sid": "CH-048",
+    "subject": "三晕棱间装",
+    "predicate": "采用技法",
+    "object": "绿叠晕",
+    "actual_subtype": "步骤",
+    "expected": "技法",
+    "evidence": [
+      {
+        "source_sid": "CH-048",
+        "source_field": "text",
+        "quote": "其外棱缘道用绿叠晕，浅色在内",
+        "occurrence": 1,
+        "start": 0,
+        "end": 14,
+        "span_valid": true
+      }
+    ]
+  }
+]

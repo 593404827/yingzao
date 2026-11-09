@@ -1,0 +1,56 @@
+[
+  {
+    "id": "Bba19b568c81f25498b8f",
+    "sid": "CH-028",
+    "source": "Ea60d3c2db1f64c4beb4e",
+    "target": "E70ba0c036c71e1222e3e",
+    "kind": "relations",
+    "predicate": "采用技法",
+    "value": "",
+    "status": "本轮原文核验",
+    "pending_ids": [],
+    "entry_pending_ids": [],
+    "evidence": [
+      {
+        "source_sid": "CH-028",
+        "source_field": "text",
+        "quote": "外棱四周皆留缘道，用青、绿或朱叠晕",
+        "start": 13,
+        "end": 30,
+        "span_valid": true
+      }
+    ],
+    "qualifiers": {
+      "scope": "外缘道"
+    },
+    "original_record": "",
+    "audit_note": "本轮依据本条制度主语与施作描述补齐制度到本条技法实例的关系；非专家终审"
+  },
+  {
+    "id": "Bb2ca85db0d3b088bdb1b",
+    "sid": "CH-028",
+    "source": "Ea60d3c2db1f64c4beb4e",
+    "target": "E5750125405c12fe84058",
+    "kind": "relations",
+    "predicate": "采用技法",
+    "value": "",
+    "status": "本轮原文核验",
+    "pending_ids": [],
+    "entry_pending_ids": [],
+    "evidence": [
+      {
+        "source_sid": "CH-028",
+        "source_field": "text",
+        "quote": "用朱或青、绿剔地",
+        "start": 64,
+        "end": 72,
+        "span_valid": true
+      }
+    ],
+    "qualifiers": {
+      "scope": "纹样底衬"
+    },
+    "original_record": "",
+    "audit_note": "本轮依据本条制度主语与施作描述补齐制度到本条技法实例的关系；非专家终审"
+  }
+]

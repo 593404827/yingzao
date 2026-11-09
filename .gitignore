@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+!.env.example
+*.log
+*.sqlite3*
+backups/
+**/neo4j*/data/
+**/neo4j*/logs/
+**/resources/files/
+*.pdf
+*.xlsx
+*.pptx
+*.zip

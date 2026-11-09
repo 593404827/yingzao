@@ -1,0 +1,4443 @@
+{
+  "checks": [
+    {
+      "topic": "赭笔整体被当作工具",
+      "previous": "旧版在 CH-009/031/045 合并为赭笔工具实体",
+      "current": "当前赭笔有效实体 0；笔的使用工具关系 3 条；赭色关系 3 条",
+      "result": "本轮修正",
+      "reason": "遵循用户明确拆分要求；旧实体及三条旧关系撤回，原文不改。赭色不等同特定矿物颜料。"
+    },
+    {
+      "topic": "CH-028 诸华间杂",
+      "previous": "截图中作为技法或纹样整体提取",
+      "current": "当前对应实体 0 个",
+      "result": "当前未复现该旧错误",
+      "reason": "当前用诸华作为纹样、五彩设色作为设色方法；不把间杂直接当独立技法。"
+    },
+    {
+      "topic": "CH-028 内施五彩诸华",
+      "previous": "截图中作为技法或纹样整体提取",
+      "current": "当前对应实体 0 个",
+      "result": "当前未复现该旧错误",
+      "reason": "当前用诸华作为纹样、五彩设色作为设色方法；不把间杂直接当独立技法。"
+    },
+    {
+      "topic": "CH-028 五彩诸华",
+      "previous": "截图中作为技法或纹样整体提取",
+      "current": "当前对应实体 0 个",
+      "result": "当前未复现该旧错误",
+      "reason": "当前用诸华作为纹样、五彩设色作为设色方法；不把间杂直接当独立技法。"
+    },
+    {
+      "topic": "纹样没有品第",
+      "previous": "老师指出纹样无品第",
+      "current": "当前有效纹样属性中无品第/等级/等第",
+      "result": "当前检查通过",
+      "reason": "列举种类数与价值等级区分。"
+    },
+    {
+      "topic": "空缘与外缘道对晕",
+      "previous": "截图质疑对象关系不完整",
+      "current": "当前直接对晕关系 1 条",
+      "result": "本轮补齐",
+      "reason": "保留对晕技法，同时补齐空缘→对晕→外缘道；不跨构件配对。"
+    },
+    {
+      "topic": "外棱四周不宜包含缘道",
+      "previous": "截图质疑层级关系",
+      "current": "该模式有效关系 0 条",
+      "result": "当前检查通过",
+      "reason": "当前部位统一在施作对象/构件部位下，未保留截图中的包含区域层级。"
+    },
+    {
+      "topic": "减与三分之一如何记录",
+      "previous": "截图要求补充运算和比例",
+      "current": "[[\"计量项目\", \"空缘宽度\"], [\"参照项目\", \"外缘道宽度\"], [\"运算词\", \"减\"], [\"原文比例\", \"三分之一\"]]",
+      "result": "部分修正、解释仍待确认",
+      "reason": "本轮记录运算词=减、原文比例=三分之一；原文与题解的最终比例解释不擅自裁定。"
+    },
+    {
+      "topic": "尺寸主语与量值：梁栿缘道宽度二分规定",
+      "previous": "截图提出保留对象与尺寸值分离",
+      "current": "[{\"relation\": \"约束对象\", \"target\": \"外缘道\", \"scope\": \"梁栿的缘道宽度\"}]",
+      "result": "本轮修正",
+      "reason": "约束对象改为缘道，构件写入范围；不将被测对象误作参照对象，分°不当厘米。"
+    },
+    {
+      "topic": "尺寸主语与量值：枓栱缘道宽度一分规定",
+      "previous": "截图提出保留对象与尺寸值分离",
+      "current": "[{\"relation\": \"约束对象\", \"target\": \"外缘道\", \"scope\": \"枓栱的缘道宽度\"}]",
+      "result": "本轮修正",
+      "reason": "约束对象改为缘道，构件写入范围；不将被测对象误作参照对象，分°不当厘米。"
+    },
+    {
+      "topic": "关系类别越界 CH-048 / A66485a0cc0e9fdf9f252",
+      "previous": "三晕棱间装→采用技法→绿叠晕",
+      "current": "目标子类为步骤，预期技法",
+      "result": "本轮新增待确认",
+      "reason": "保留原模型候选与证据，不自动更改为另一种关系；默认回答排除。"
+    },
+    {
+      "topic": "关系类别越界 CH-039 / A70b1a21d9c4f2ecf7afd",
+      "previous": "碾玉→采用设色方法→五彩遍装",
+      "current": "目标子类为装饰制度，预期设色方法",
+      "result": "本轮新增待确认",
+      "reason": "保留原模型候选与证据，不自动更改为另一种关系；默认回答排除。"
+    },
+    {
+      "topic": "关系类别越界 CH-039 / Aac0c67518a617c6d8161",
+      "previous": "五彩装→采用设色方法→五彩遍装",
+      "current": "目标子类为装饰制度，预期设色方法",
+      "result": "本轮新增待确认",
+      "reason": "保留原模型候选与证据，不自动更改为另一种关系；默认回答排除。"
+    },
+    {
+      "topic": "关系类别越界 CH-036 / Ab46077c8967119575ebd",
+      "previous": "华文→使用色彩→绿华",
+      "current": "目标子类为颜料，预期色彩",
+      "result": "本轮新增待确认",
+      "reason": "保留原模型候选与证据，不自动更改为另一种关系；默认回答排除。"
+    },
+    {
+      "topic": "关系类别越界 CH-048 / Ad7420f42ff00debf3e68",
+      "previous": "三晕棱间装→采用技法→青叠晕",
+      "current": "目标子类为步骤，预期技法",
+      "result": "本轮新增待确认",
+      "reason": "保留原模型候选与证据，不自动更改为另一种关系；默认回答排除。"
+    },
+    {
+      "topic": "关系类别越界 CH-048 / Af1c8379e16ed5ebaa54b",
+      "previous": "三晕棱间装→采用技法→绿叠晕",
+      "current": "目标子类为步骤，预期技法",
+      "result": "本轮新增待确认",
+      "reason": "保留原模型候选与证据，不自动更改为另一种关系；默认回答排除。"
+    }
+  ],
+  "historical_issues": [
+    {
+      "id": "Q001",
+      "sid": "CH-003",
+      "question": "此为引《周官》的词义训释（“猷”释为图画），属总释性引文，未陈述彩画作具体纹样、技法、色彩或规制知识，无可靠候选可抽取。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "该段是字义训释或画史引证，不是现有八类所表达的施作知识。保留原文与文献索引，允许候选为空；不据此增造人物或技法。",
+      "current_entity_count": 0,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q002",
+      "sid": "CH-003",
+      "question": "未生成结构化候选；需核查是否属于研究范围未覆盖或模型漏抽",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "该段是字义训释或画史引证，不是现有八类所表达的施作知识。保留原文与文献索引，允许候选为空；不据此增造人物或技法。",
+      "current_entity_count": 0,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q003",
+      "sid": "CH-004",
+      "question": "此条为文献引证，记述图画起源的典故，未陈述彩画作具体的纹样、技法、制度、材料或规制知识，无法归入现有八类本体，暂不生成候选实体。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "该段是字义训释或画史引证，不是现有八类所表达的施作知识。保留原文与文献索引，允许候选为空；不据此增造人物或技法。",
+      "current_entity_count": 0,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q004",
+      "sid": "CH-004",
+      "question": "未生成结构化候选；需核查是否属于研究范围未覆盖或模型漏抽",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "该段是字义训释或画史引证，不是现有八类所表达的施作知识。保留原文与文献索引，允许候选为空；不据此增造人物或技法。",
+      "current_entity_count": 0,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q005",
+      "sid": "CH-005",
+      "question": "此句为《尔雅》训诂引文，解释'猷/图'为画图之义，属字义释义而非彩画实体或规定，无法以现有八类实体与关系表达，暂不生成候选。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "该段是字义训释或画史引证，不是现有八类所表达的施作知识。保留原文与文献索引，允许候选为空；不据此增造人物或技法。",
+      "current_entity_count": 0,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q006",
+      "sid": "CH-005",
+      "question": "未生成结构化候选；需核查是否属于研究范围未覆盖或模型漏抽",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "该段是字义训释或画史引证，不是现有八类所表达的施作知识。保留原文与文献索引，允许候选为空；不据此增造人物或技法。",
+      "current_entity_count": 0,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q007",
+      "sid": "CH-006",
+      "question": "引《西京赋》及五臣注为文献引证，“绣云之饰”是否构成具体纹样及其施作对象，语义依赖注文解释，暂列待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "保留“绣云之饰”的原文表述；请确认是否可识别为具体云纹、其名称及施作对象，未确定前不生成具体纹样关系。",
+      "current_entity_count": 3,
+      "current_relation_count": 1,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q008",
+      "sid": "CH-006",
+      "question": "“㮰”释为连檐，与“连檐”构件的对应关系是否为同一建筑构件，待专家确认。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "原文自注“㮰，连檐也”足以确认对应。实体规范名改为“连檐”，原字㮰保留于原文证据与名称说明。",
+      "current_entity_count": 3,
+      "current_relation_count": 1,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q009",
+      "sid": "CH-006",
+      "question": "relations[1]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "“连檐—装饰于—馆室”把构件误作纹样；撤回该边。不能从这段文字推出某具体云纹施于连檐。",
+      "current_entity_count": 3,
+      "current_relation_count": 1,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q010",
+      "sid": "CH-008",
+      "question": "“或”表明素象什物与梁栋枓栱为备选施作范围，“素象什物”具体指何物待核",
+      "historical_status": "待老师确认",
+      "previous_decision": "“素象什物”具体对象仍不明确；保留原词及备选范围，不强行等同某一建筑构件。请老师释义。",
+      "current_entity_count": 12,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q011",
+      "sid": "CH-008",
+      "question": "引《画品》论图、画、缋源流及鸟书、史皇作图等，属画史叙述，是否纳入本体及如何建模待核",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "画史叙述及“画施缣素”的定义保留在原文说明中，不强制纳入建筑彩画施作对象。此处不据定义增造建筑构件。",
+      "current_entity_count": 12,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q012",
+      "sid": "CH-008",
+      "question": "“画”施于缣素的定义是否需建实体与关系待核",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "画史叙述及“画施缣素”的定义保留在原文说明中，不强制纳入建筑彩画施作对象。此处不据定义增造建筑构件。",
+      "current_entity_count": 12,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q013",
+      "sid": "CH-009",
+      "question": "“草色”与“粉”的具体色彩/材料类别及调和关系未能由本句独立确定，暂只抽取为工序，待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "可确认有起稿用草色及粉的操作，但“粉”的具体物质未载。保留原词，不擅改为铅粉或白土；请确认材料所指。",
+      "current_entity_count": 18,
+      "current_relation_count": 15,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q014",
+      "sid": "CH-009",
+      "question": "“浅色之外”承接范围在五彩装/叠晕碾玉装赭笔描画与其余墨笔描画之间的适用边界不完全明确，旁描道、留粉晕与前后步骤的先后关系待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "“其余”“浅色之外”的作用范围存在释读分歧。不得自动扩展为一切非五彩、非碾玉做法，也不能只按列举顺序推出全部先后。保留字面范围，请核定承接边界。",
+      "current_entity_count": 18,
+      "current_relation_count": 15,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q015",
+      "sid": "CH-009",
+      "question": "“其余”指不排除五彩装及叠晕碾玉装之外全部做法的范围可由本句确定，但是否涵盖所有非五彩/碾玉做法仍需结合前后制度条文复核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "“其余”“浅色之外”的作用范围存在释读分歧。不得自动扩展为一切非五彩、非碾玉做法，也不能只按列举顺序推出全部先后。保留字面范围，请核定承接边界。",
+      "current_entity_count": 18,
+      "current_relation_count": 15,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q016",
+      "sid": "CH-010",
+      "question": "“贴金地”指采用贴金衬底的做法，其作为施作条件的适用范围（是否专指某一衬地类型）需核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "贴金地是条件分支；本条译文可支持贴金衬地用鳔胶水。不将这一条件泛化到所有衬地。",
+      "current_entity_count": 9,
+      "current_relation_count": 8,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q017",
+      "sid": "CH-011",
+      "question": "“同上”指同上之候干程序，遍数同前五遍；具体候干细节依承接，供复核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "原文先五遍、遍干后再刷，后段“同上”承接候干与五遍程序。保留两组五遍，不合成一次十遍。",
+      "current_entity_count": 16,
+      "current_relation_count": 20,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q018",
+      "sid": "CH-011",
+      "question": "“斫”具体所指（碾压摩挲使光）依译文理解，原文字义待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "译文明确解释为碾压摩挲使光。保留具体步骤“斫令光”及释义，不另推定一种现代加工技法。",
+      "current_entity_count": 16,
+      "current_relation_count": 20,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q019",
+      "sid": "CH-013",
+      "question": "“同”所指参照对象在相邻制度语境中可能承接前文；当前仅据本句记录碾玉装、青绿棱间与刷雌黄合绿做法相同，未扩展其具体工序。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "本句“同”表达制备做法参照。保留本条所列制度与刷饰做法的参照范围，不把未写出的前文步骤无条件复制。",
+      "current_entity_count": 10,
+      "current_relation_count": 8,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q020",
+      "sid": "CH-013",
+      "question": "“每三分中”为配比基准，已按两种材料分别建定量规定；是否需要显式建“混合料总量三分”实体待本体审核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "一份青淀、二份荼土，以总三份为基准。现有定量规定可表达，不必增设“混合料总量”实体。",
+      "current_entity_count": 10,
+      "current_relation_count": 8,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q021",
+      "sid": "CH-014",
+      "question": "“亦”承接前文碾玉装候胶水干的做法（CH-013），此处胶水涂刷步骤未在本文详述，立刷、横刷是否使用同一白土亦依译文推定，待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "本条立刷、横刷使用同一好白土，各一遍；胶水衬底可结合前文衬地通则理解，不增造新的白土品种。",
+      "current_entity_count": 4,
+      "current_relation_count": 5,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q022",
+      "sid": "CH-015",
+      "question": "“华”为色之细淡部分的术语解释，本体无术语定义类，暂不建实体，待核是否需扩充。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "“华”是色之细淡部分的释义，保留术语说明；不能因出现“华”字就识别成纹样。",
+      "current_entity_count": 10,
+      "current_relation_count": 15,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q023",
+      "sid": "CH-016",
+      "question": "“并”字是否指凡贴真金地一律改用鳔胶水，抑或与前“稍浓水”并列，语义待核；此处按条件分支处理。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "贴真金地的条件下用鳔胶水，译文明确。保留独立条件，不能把“并”解释为任何场合都混用两种液体。",
+      "current_entity_count": 8,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q024",
+      "sid": "CH-017",
+      "question": "块小者免捣的条件限定以属性形式暂记于捣步骤，是否需独立施作规定节点待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "“块小者不须捣”是免捣条件。保留于具体步骤的条件说明及相关关系限定，不记录为施作遍数。",
+      "current_entity_count": 9,
+      "current_relation_count": 7,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q025",
+      "sid": "CH-017",
+      "question": "原文为'汤'，译文释为淡薄胶水，此处按原文记为辅助材料'汤'，是否即胶水待核。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "CH-015原文已定义“用薄胶汤，凡下云用汤者同。其称热汤者非”。据此本条“汤”规范为薄胶汤，与热汤区分。",
+      "current_entity_count": 9,
+      "current_relation_count": 7,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q026",
+      "sid": "CH-017",
+      "question": "'澄去'去水及弃砂石粗脚为否定性操作，暂并入取细步骤次序，未单列排除关系，待核。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "“澄去”“弃砂石粗脚”是去水、弃除杂质的操作，不把砂石粗脚并列为有效颜料；以具体步骤保留操作对象原词。",
+      "current_entity_count": 9,
+      "current_relation_count": 7,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q027",
+      "sid": "CH-018",
+      "question": "「量度所用」为按所需用量称取藤黄的限定，现有属性难以完整表达用量基准，暂保留待核",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "“量度所用”“笼罩”均可保留为具体步骤。原文未给定量则不补数值；不必先判定为新的抽象技法才可记录。",
+      "current_entity_count": 8,
+      "current_relation_count": 9,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q028",
+      "sid": "CH-018",
+      "question": "「笼罩」可理解为罩染用法，是否为独立技法（如罩染）待专家确认，暂作步骤处理",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "“量度所用”“笼罩”均可保留为具体步骤。原文未给定量则不补数值；不必先判定为新的抽象技法才可记录。",
+      "current_entity_count": 8,
+      "current_relation_count": 9,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q029",
+      "sid": "CH-019",
+      "question": "“少汤”指少量汤（译文作清淡胶水），“汤”是否同前文“热汤”抑或胶液，资料内部未明示，待核是否应单独建辅助材料并与热汤区分。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "“少汤”依CH-015通则为少量薄胶汤，不能与本句“热汤”混同。补入薄胶汤材料及入汤步骤的用料关系。",
+      "current_entity_count": 8,
+      "current_relation_count": 9,
+      "current_pending_relation_count": 1,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q030",
+      "sid": "CH-019",
+      "question": "“华心”“朱地”为彩画部位/衬地，本体以构件部位暂记，待核是否宜归入其他施作对象类别；熬制步骤是否应作为独立条件分支连接“入少汤用之”之后亦待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "熬汁的条件可确定；“华心”“朱地”是否应作构件部位仍有本体范围问题。撤下不稳妥的构件部位节点，条件保留在操作说明，请确认是否另设装饰区域子类。",
+      "current_entity_count": 8,
+      "current_relation_count": 9,
+      "current_pending_relation_count": 1,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q031",
+      "sid": "CH-019",
+      "question": "attributes[3]:属性不属于该子类",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "步骤不具有“适用条件”数据属性。将条件移至对应操作关系的condition，保留原句，不为通过校验而改造事实。",
+      "current_entity_count": 8,
+      "current_relation_count": 9,
+      "current_pending_relation_count": 1,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q032",
+      "sid": "CH-020",
+      "question": "relations[0]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "颜料制备方法相同不等于纹样“类同”。撤回颜料之间的类同边，通过已有制备步骤分别作用于对应颜料表达共同方法。",
+      "current_entity_count": 6,
+      "current_relation_count": 5,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q033",
+      "sid": "CH-021",
+      "question": "relations[0]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "颜料制备方法相同不等于纹样“类同”。撤回颜料之间的类同边，通过已有制备步骤分别作用于对应颜料表达共同方法。",
+      "current_entity_count": 9,
+      "current_relation_count": 8,
+      "current_pending_relation_count": 4,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q034",
+      "sid": "CH-022",
+      "question": "石灰及油为不得相近之物，本体无合适关系名（排除关系是否适用待核），暂记录于此",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "原文明示雌黄不可与石灰、油相近。用施作规定记录禁忌范围，限定材料及排除关系带“不得相近”条件，不解释为全平台禁止使用这两种材料。",
+      "current_entity_count": 12,
+      "current_relation_count": 13,
+      "current_pending_relation_count": 3,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q035",
+      "sid": "CH-022",
+      "question": "缣素作为禁用施作对象，是否建实体并以排除关系连接待核",
+      "historical_status": "待老师确认",
+      "previous_decision": "不能施于缣素的禁忌文字明确，但缣素并非建筑构件。保留规定文字，请确认施作对象是否扩展到非建筑载体；不强行归为建筑构件。",
+      "current_entity_count": 12,
+      "current_relation_count": 13,
+      "current_pending_relation_count": 3,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q036",
+      "sid": "CH-023",
+      "question": "relations[2]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "设色方法与材料的连接改由具体“螺青合铅粉为地”步骤承载，材料关系的主语为步骤；保留原设色方法与用量规定。",
+      "current_entity_count": 8,
+      "current_relation_count": 6,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q037",
+      "sid": "CH-023",
+      "question": "relations[3]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "设色方法与材料的连接改由具体“螺青合铅粉为地”步骤承载，材料关系的主语为步骤；保留原设色方法与用量规定。",
+      "current_entity_count": 8,
+      "current_relation_count": 6,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q038",
+      "sid": "CH-024",
+      "question": "relations[6]:自连需要人工复核",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "同一条“用槐华一钱熬汁—包含步骤—自身”既无有效证据又是空自连。撤回此边；两条提示对应同一处修改，不重复计修改数。",
+      "current_entity_count": 8,
+      "current_relation_count": 7,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q039",
+      "sid": "CH-024",
+      "question": "relations[6]:缺少证据",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "同一条“用槐华一钱熬汁—包含步骤—自身”既无有效证据又是空自连。撤回此边；两条提示对应同一处修改，不重复计修改数。",
+      "current_entity_count": 8,
+      "current_relation_count": 7,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q040",
+      "sid": "CH-025",
+      "question": "relations[2]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "两种备选衬底分别建立具体步骤：紫粉合黄丹为地、只用黄丹为地；分别连接材料并保留备选分组，不合并成三种材料同时用。",
+      "current_entity_count": 7,
+      "current_relation_count": 5,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q041",
+      "sid": "CH-025",
+      "question": "relations[3]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "两种备选衬底分别建立具体步骤：紫粉合黄丹为地、只用黄丹为地；分别连接材料并保留备选分组，不合并成三种材料同时用。",
+      "current_entity_count": 7,
+      "current_relation_count": 5,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q042",
+      "sid": "CH-025",
+      "question": "relations[4]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "两种备选衬底分别建立具体步骤：紫粉合黄丹为地、只用黄丹为地；分别连接材料并保留备选分组，不合并成三种材料同时用。",
+      "current_entity_count": 7,
+      "current_relation_count": 5,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q043",
+      "sid": "CH-026",
+      "question": "“汤”之义（热水或淡胶水，译文作淡薄的胶水）依原文难以确定，暂记为辅助材料“汤”，具体所指待核。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "依CH-015用汤通则，“汤”规范为薄胶汤，保留原词证据；不能规范成热水。",
+      "current_entity_count": 28,
+      "current_relation_count": 37,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q044",
+      "sid": "CH-026",
+      "question": "“浮淘青”是否与生青、层青同类原料及其指代范围待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "“浮淘青”与生青、层青的同一性及原料范围未确定。保留原名，不做同义合并，请老师确认。",
+      "current_entity_count": 28,
+      "current_relation_count": 37,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q045",
+      "sid": "CH-027",
+      "question": "“为主”“隔间品合”的主从与配合关系无合适本体关系表达，暂未建连边，待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "主色、间隔配色及“此”的泛指解释保留在条目释义中，不虚构固定配比、必然顺序或无原文名称的实体。现有候选不必为每句解释性文字都建边。",
+      "current_entity_count": 16,
+      "current_relation_count": 8,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q046",
+      "sid": "CH-027",
+      "question": "“此”回指范围（似指前述叠晕设色做法）在原文中无独立名称，无法确定其指代节点，暂存待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "主色、间隔配色及“此”的泛指解释保留在条目释义中，不虚构固定配比、必然顺序或无原文名称的实体。现有候选不必为每句解释性文字都建边。",
+      "current_entity_count": 16,
+      "current_relation_count": 8,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q047",
+      "sid": "CH-027",
+      "question": "画的用色制度为描述性内容，无法用现有属性或定量规定表达，待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "主色、间隔配色及“此”的泛指解释保留在条目释义中，不虚构固定配比、必然顺序或无原文名称的实体。现有候选不必为每句解释性文字都建边。",
+      "current_entity_count": 16,
+      "current_relation_count": 8,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q048",
+      "sid": "CH-028",
+      "question": "“分°”为材分°单位，题解谓以斗栱材分值折算；该折算解释仅见题解，原典数值照录为二分°/一分°，材分折算关系待核。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "原典二分°、一分°照录。材分是专业尺度，不直接折算为现代长度；使用具体斗栱材等第后才可折算。另发现空缘比例的原文与题解冲突，列N001。",
+      "current_entity_count": 19,
+      "current_relation_count": 25,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q049",
+      "sid": "CH-028",
+      "question": "青、绿、朱为叠晕备选色，作为alternative_group记录；各色与叠晕的具体搭配次序原文未明。",
+      "historical_status": "待老师确认",
+      "previous_decision": "青、绿、朱虽可识别，但本句不足以给出唯一的组配及次序。保留备选条件，不连成同时使用或固定序列，请确认需否细化。",
+      "current_entity_count": 19,
+      "current_relation_count": 25,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q050",
+      "sid": "CH-028",
+      "question": "依判定不整体造“五彩诸华间杂”纹样，诸华为纹样、五彩为设色；“五彩”设色方法与诸华的具体对应关系原文未细分，设色方法节点未建，待核。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "“五彩诸华间杂”不整体作为纹样。补五彩设色方法，将诸华作为纹样，通过采用设色方法、制度使用纹样表达，不把局部用色等同完整五彩遍装制度。",
+      "current_entity_count": 19,
+      "current_relation_count": 25,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q051",
+      "sid": "CH-028",
+      "question": "relations[0]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "五彩遍装是装饰制度，非纹样；制度与梁、栱改用图3.0已有的“适用对象”，不使用纹样专属装饰于。",
+      "current_entity_count": 19,
+      "current_relation_count": 25,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q052",
+      "sid": "CH-028",
+      "question": "relations[1]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "五彩遍装是装饰制度，非纹样；制度与梁、栱改用图3.0已有的“适用对象”，不使用纹样专属装饰于。",
+      "current_entity_count": 19,
+      "current_relation_count": 25,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q053",
+      "sid": "CH-029",
+      "question": "原文未给出圈头合子的施用位置；译文/题解暗示其与豹脚合晕同用方桁、飞子、连檐，但本句单独成条，施用范围存疑，待人工核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "圈头合子的施用位置未在本句独立说明。暂不继承豹脚合晕的全部对象，请确认是否同用于方桁、飞子、连檐。",
+      "current_entity_count": 39,
+      "current_relation_count": 68,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q054",
+      "sid": "CH-029",
+      "question": "牡丹华在此句作为可作写生画之对象出现，与其类同宝相华的关系并列保留；“写生画”施作对象与“或作”备选性已记录，施用范围（梁、额或栱眼壁内）是否同样限定莲荷华待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "“或作写生画”覆盖牡丹华及莲荷华，适用梁、额或栱眼壁内；保留“或”的备选限定，不理解为同一表面必用两种。",
+      "current_entity_count": 39,
+      "current_relation_count": 68,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q055",
+      "sid": "CH-029",
+      "question": "“以上”按文意指前三品（海石榴华、宝相华、莲荷华），已按此连接；是否亦含宝牙华、太平华、牡丹华等类同名目待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "可确定直接列举的基本纹样适用范围；类同名称是否自动继承全部施作位置，原文未逐一展开。保留基础连接，不跨名称扩展，请确认继承规则。",
+      "current_entity_count": 39,
+      "current_relation_count": 68,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q056",
+      "sid": "CH-030",
+      "question": "“以上”承接一曰至四曰四种琐文（琐子、簟文、罗地龟文、四出），是否含各类同类纹样（联环琐等）不确定，待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "可确定直接列举的基本纹样适用范围；类同名称是否自动继承全部施作位置，原文未逐一展开。保留基础连接，不跨名称扩展，请确认继承规则。",
+      "current_entity_count": 29,
+      "current_relation_count": 44,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q057",
+      "sid": "CH-030",
+      "question": "“枓底”按题解为覆枓之底的造型（曲水造型变体），非建筑构件；此处按变体处理，待专家复核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "原文曲水条及译注支持枓底作为纹样造型名称，在本条不将其直接当作真实建筑构件；保留造型变体表达。",
+      "current_entity_count": 29,
+      "current_relation_count": 44,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q058",
+      "sid": "CH-030",
+      "question": "relations[44]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "“柱头及枓内”是并列施作范围，不能推出柱头包含枓。删除误建包含部位边，不简单反向。",
+      "current_entity_count": 29,
+      "current_relation_count": 44,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q059",
+      "sid": "CH-031",
+      "question": "「或更以浅色拂淡」承接赭笔描之后，是否构成先于关系及拂淡的具体对象（飞走之物抑或整体画面）需复核；译文称白粉地为白土与铅粉所刷衬底，此材料构成仅见于题解，未列入候选。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "浅色拂淡是“或更”的可选步骤，译文将其承接飞走之物；保留可选范围，不能转为所有画面的必经工序。",
+      "current_entity_count": 23,
+      "current_relation_count": 26,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q060",
+      "sid": "CH-031",
+      "question": "「以五彩装饰」之五彩按设色处理；其与「五彩遍装」制度的关系（是否即采用五彩遍装做法）不确定，待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "本处五彩表示设色，不足以等同完整五彩遍装制度；保留设色层面，不增造制度同义关系。",
+      "current_entity_count": 23,
+      "current_relation_count": 26,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q061",
+      "sid": "CH-033",
+      "question": "“品”在此指种类而非等级，已按列举种类数处理；译文称“品第”是否含等级意味待专家核定。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "依本轮专业审核前提，“品”为列举种类，不是纹样等级。不恢复纹样品第属性；现有列举种类数可保留。",
+      "current_entity_count": 19,
+      "current_relation_count": 18,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q062",
+      "sid": "CH-034",
+      "question": "“四品”依语境为所列举种类数，非等级品第；译文“品第”为解释性表述，候选取列举种类数。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "依本轮专业审核前提，“品”为列举种类，不是纹样等级。不恢复纹样品第属性；现有列举种类数可保留。",
+      "current_entity_count": 19,
+      "current_relation_count": 19,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q063",
+      "sid": "CH-034",
+      "question": "“骑跨、牵拽走兽人物”是否为纹样的规范名称需专家确认；化生同时见于骑跨飞禽人物（CH-033）与骑跨走兽人物，是否同一纹样待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "跨飞禽、跨走兽中的化生需带各自语境。请确认实体是否同一及规范名称；本轮不跨语境合并。",
+      "current_entity_count": 19,
+      "current_relation_count": 19,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q064",
+      "sid": "CH-036",
+      "question": "“单枝条”是否为独立纹样名（单枝条华文）或仅指枝条状华文，无法确认，未单建纹样实体",
+      "historical_status": "待老师确认",
+      "previous_decision": "单枝条、牙头青、牙头及衬地的指称仍不充分。保留原词与局部用色scope，不将疑似纹样、构件或色层强行合并，请老师逐项释义。",
+      "current_entity_count": 21,
+      "current_relation_count": 29,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q065",
+      "sid": "CH-036",
+      "question": "“牙头”指牙头华文还是构件牙头部位不确定；“牙头青”为依上下文拆出的色彩名，待核",
+      "historical_status": "待老师确认",
+      "previous_decision": "单枝条、牙头青、牙头及衬地的指称仍不充分。保留原词与局部用色scope，不将疑似纹样、构件或色层强行合并，请老师逐项释义。",
+      "current_entity_count": 21,
+      "current_relation_count": 29,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q066",
+      "sid": "CH-036",
+      "question": "“地”（衬地）作为施作对象在本体中无明确部位对应，其用色关系暂以华文使用色彩的scope记录，待核是否需衬地实体",
+      "historical_status": "待老师确认",
+      "previous_decision": "单枝条、牙头青、牙头及衬地的指称仍不充分。保留原词与局部用色scope，不将疑似纹样、构件或色层强行合并，请老师逐项释义。",
+      "current_entity_count": 21,
+      "current_relation_count": 29,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q067",
+      "sid": "CH-036",
+      "question": "relations[26]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "绿华合粉是具体调制步骤使用绿华和粉，不是颜料实体使用材料。补操作节点并改接材料。",
+      "current_entity_count": 21,
+      "current_relation_count": 29,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q068",
+      "sid": "CH-037",
+      "question": "赤黄叠晕各步骤是否应纳入“叠晕”技法的包含步骤并与其先于青色系步骤，原文以“凡染”另起，承接关系待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "“凡染赤黄”另起做法分支，不能从段落排列推出赤黄做法先于青色系。检查结果未见跨赤黄与青色系的先于边，现有分支内部明确的先、次、再保留。",
+      "current_entity_count": 41,
+      "current_relation_count": 43,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q069",
+      "sid": "CH-037",
+      "question": "“二绿华”在此为颜料名还是纹样色层名存疑；“或用”为备选，已保留alternative_group，具体施作关系待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "二绿华是具体材料名称还是二绿色层仍需确认。保留原词；藤黄汁罩加作为可选操作单独表达，不先合并其概念。",
+      "current_entity_count": 41,
+      "current_relation_count": 43,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q070",
+      "sid": "CH-037",
+      "question": "“数点”“少许”为模糊量，未建定量规定；如需定量表达待扩充。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "数点、少许可作为原文模糊量保留；无需为此新增数值型字段，也不能擅自转换为克数或固定滴数。",
+      "current_entity_count": 41,
+      "current_relation_count": 43,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q071",
+      "sid": "CH-037",
+      "question": "“三青等”涵盖范围（是否含三绿、三朱）及“深色压罩”所指步骤的完整排除对象待核；缘道归构件部位抑或纹样要素待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "“三青等”的等字不能自动展开为三绿、三朱；狭小、高远的条件组合及压罩豁免范围请确认。现按原词保留，不扩大排除范围。",
+      "current_entity_count": 41,
+      "current_relation_count": 43,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q072",
+      "sid": "CH-037",
+      "question": "relations[29]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "以藤黄汁罩加应由步骤使用藤黄汁，保留“或用”及晕内二绿华范围，不用颜料作使用材料关系主语。",
+      "current_entity_count": 41,
+      "current_relation_count": 43,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q073",
+      "sid": "CH-038",
+      "question": "题解认为此处梁、额似指室内梁栿与内额而非外檐檐额、阑额，此解释仅见于题解，候选仍按原文记录，具体所指待专家核定。",
+      "historical_status": "待老师确认",
+      "previous_decision": "题解自身以推测语气区分室内梁额与外檐构件；原文仅梁、额。保留原名，请确认具体构件所指，不把考证意见写成原文明示。",
+      "current_entity_count": 20,
+      "current_relation_count": 18,
+      "current_pending_relation_count": 1,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q074",
+      "sid": "CH-038",
+      "question": "“外缘”依上下文指金缘，候选以金缘为参照对象；若另有所指待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "金缘承接外缘道可由原文和译文支持；枓栱连称暂保留原称，不在此强拆并跨条合并。该处理不妨碍后续实体规范化。",
+      "current_entity_count": 20,
+      "current_relation_count": 18,
+      "current_pending_relation_count": 1,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q075",
+      "sid": "CH-038",
+      "question": "“枓栱”为原文连称，可能指枓与栱两类构件合并表述，是否拆分为两个构件实体待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "金缘承接外缘道可由原文和译文支持；枓栱连称暂保留原称，不在此强拆并跨条合并。该处理不妨碍后续实体规范化。",
+      "current_entity_count": 20,
+      "current_relation_count": 18,
+      "current_pending_relation_count": 1,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q076",
+      "sid": "CH-038",
+      "question": "relations[9]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "外缘道施明金建立具体步骤，步骤使用明金并作用于金缘；金缘本身不是使用材料的工艺。",
+      "current_entity_count": 20,
+      "current_relation_count": 18,
+      "current_pending_relation_count": 1,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q077",
+      "sid": "CH-039",
+      "question": "窠纹样的承接对象（间于何者之内）依译文为柱身华文之内，但原文省略，待核",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "译文明确窠在柱身华文内部；保留解释依据及scope，不把译文补出的对象冒充原句直接出现的词。",
+      "current_entity_count": 28,
+      "current_relation_count": 26,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q078",
+      "sid": "CH-039",
+      "question": "「碾玉」此处为碾玉装制度之省称，与纹样「碾玉华」的关系待核",
+      "historical_status": "待老师确认",
+      "previous_decision": "制度省称“碾玉”与具体碾玉华不能仅凭词面合并。保留原名及语境，请老师核定对应概念。",
+      "current_entity_count": 28,
+      "current_relation_count": 26,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q079",
+      "sid": "CH-039",
+      "question": "分脚如意的施作对象依译文承接额的两边缘道，原文未明言，待核",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "分脚如意承接额两边缘道、“同”承接前述白地外勾勒设色、圈之为描圈操作，可据译文保留对应范围；不由“同”复制无关工序或所有量值。",
+      "current_entity_count": 28,
+      "current_relation_count": 26,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q080",
+      "sid": "CH-040",
+      "question": "“同”字回指对象不够明确，译文理解为与白地外同样勾勒描绘并以五彩浅色间装，待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "分脚如意承接额两边缘道、“同”承接前述白地外勾勒设色、圈之为描圈操作，可据译文保留对应范围；不由“同”复制无关工序或所有量值。",
+      "current_entity_count": 25,
+      "current_relation_count": 24,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q081",
+      "sid": "CH-040",
+      "question": "“圈之”为勾勒式操作，是否建独立步骤节点及与圈线用笔的关系待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "分脚如意承接额两边缘道、“同”承接前述白地外勾勒设色、圈之为描圈操作，可据译文保留对应范围；不由“同”复制无关工序或所有量值。",
+      "current_entity_count": 25,
+      "current_relation_count": 24,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q082",
+      "sid": "CH-041",
+      "question": "relations[4]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "两侧壁、飞子头是飞子的部位。将包含方向改为飞子包含相应部位，并保留原证据。",
+      "current_entity_count": 16,
+      "current_relation_count": 15,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q083",
+      "sid": "CH-041",
+      "question": "relations[7]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "两侧壁、飞子头是飞子的部位。将包含方向改为飞子包含相应部位，并保留原证据。",
+      "current_entity_count": 16,
+      "current_relation_count": 15,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q084",
+      "sid": "CH-043",
+      "question": "绿缘内青绿互换对晕的具体做法关系方向难以用现有关系准确表达，暂以原文保留待核",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "青绿互换须保留两种条件，不能配成同一分支同时用两色；对晕作为技法及施作范围表达，不把空缘与外缘道认作同名实体。",
+      "current_entity_count": 17,
+      "current_relation_count": 16,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q085",
+      "sid": "CH-043",
+      "question": "空缘与外缘道对晕，据领域判定不将空缘与缘道作同名关系连接，具体连接方式待核",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "青绿互换须保留两种条件，不能配成同一分支同时用两色；对晕作为技法及施作范围表达，不把空缘与外缘道认作同名实体。",
+      "current_entity_count": 17,
+      "current_relation_count": 16,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q086",
+      "sid": "CH-043",
+      "question": "relations[0]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "碾玉装与梁、栱改为制度“适用对象”，补齐图3.0已有的关系名称。",
+      "current_entity_count": 17,
+      "current_relation_count": 16,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q087",
+      "sid": "CH-043",
+      "question": "relations[1]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "碾玉装与梁、栱改为制度“适用对象”，补齐图3.0已有的关系名称。",
+      "current_entity_count": 17,
+      "current_relation_count": 16,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q088",
+      "sid": "CH-044",
+      "question": "“并同五彩所用”指碾玉装华文、琐文参照五彩遍装所用华文、琐文；按复核意见不另造“五彩所用华文”实体，此参照关系已部分通过v4关系表达，整体制度适用范围待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "“并同五彩所用”是华文、琐文的参照，不另造“五彩所用华文”纹样；用规定的参照做法保留范围，不能推出两制度完全相同。",
+      "current_entity_count": 13,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q089",
+      "sid": "CH-044",
+      "question": "“一品”为新增一类的数量记述，不代表龙牙蕙草等级或列举种类数为一，仅保留新增范围限定。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "新增一品不等于总种类数为一，更不代表等级。保留新增说明，不写入品第或总种类数。",
+      "current_entity_count": 13,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q090",
+      "sid": "CH-045",
+      "question": "“华文稍肥者”为条件分支，绿地用二青、青地用二绿为条件配色，是否归入映粉碾玉技法内部限定待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "肥华条件下绿地用二青、青地用二绿应分别保留；剔之可记具体操作，不必先将其升格为独立抽象技法。",
+      "current_entity_count": 16,
+      "current_relation_count": 18,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q091",
+      "sid": "CH-045",
+      "question": "“剔之”是否独立技法（剔地）及其与碾玉装整体做法的归属待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "肥华条件下绿地用二青、青地用二绿应分别保留；剔之可记具体操作，不必先将其升格为独立抽象技法。",
+      "current_entity_count": 16,
+      "current_relation_count": 18,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q092",
+      "sid": "CH-046",
+      "question": "“红晕或青晕”为叠晕呈色还是独立色彩名称，此处暂按色彩候选处理，待专家复核是否应建为叠晕技法步骤。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "局部“红晕或青晕”保留为呈色/叠晕语境；若当前色彩实体名为红晕、青晕则规范为红、青并留原词说明，完整纹样名不机械拆词。",
+      "current_entity_count": 20,
+      "current_relation_count": 19,
+      "current_pending_relation_count": 1,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q093",
+      "sid": "CH-046",
+      "question": "“或只碾玉”的施作范围是承接柱头还是整柱，原文省略，暂关联柱与碾玉技法，待核。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "译文将或只碾玉承接柱头；将相关操作目标限定柱头，并保留备选范围及译文解释依据，不扩大为整柱。",
+      "current_entity_count": 20,
+      "current_relation_count": 19,
+      "current_pending_relation_count": 1,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q094",
+      "sid": "CH-046",
+      "question": "relations[0]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "制度与柱的关系改为适用对象；这并不自动证明所有局部做法均遍施整柱，局部条件另行保留。",
+      "current_entity_count": 20,
+      "current_relation_count": 19,
+      "current_pending_relation_count": 1,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q095",
+      "sid": "CH-046",
+      "question": "relations[18]:关系方向或类型不匹配",
+      "historical_status": "待老师确认",
+      "previous_decision": "制度关系类型可改为适用对象，但“或亦碾玉装”的仰版承接范围仍需老师确认，暂挂起该断言。",
+      "current_entity_count": 20,
+      "current_relation_count": 19,
+      "current_pending_relation_count": 1,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q096",
+      "sid": "CH-047",
+      "question": "“身内”作为构件部位及“如青在身内，更加三青”中三青的位置归属，本句颜料—部位对应关系（外棱/身内互换分支）较复杂，待人工复核各材料连接的部位与条件是否准确；浅色在内/在外的方位限定暂以原文保留，未建方位关系。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "外棱与身内配色按分支拆开：青在外、绿在内；绿在外、青在内。绿外缘不用三绿，青身内增加三青。材料使用由步骤承载，不能全挂在外棱。",
+      "current_entity_count": 27,
+      "current_relation_count": 29,
+      "current_pending_relation_count": 23,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q097",
+      "sid": "CH-047",
+      "question": "“两晕棱间装”与“青绿叠晕棱间装”是别称还是包含做法，依据不足，暂分建两个制度实体，待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "“谓之两晕棱间装”支持称谓联系，但与青绿叠晕棱间装的精确同义范围仍请确认；本轮不把两个制度节点合并。",
+      "current_entity_count": 27,
+      "current_relation_count": 29,
+      "current_pending_relation_count": 23,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q098",
+      "sid": "CH-047",
+      "question": "relations[6]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "将外棱缘错误的使用材料主语改为具体叠晕/压深步骤，并纠正身内用绿的材料目标；保留不同位置、条件和备选分支。",
+      "current_entity_count": 27,
+      "current_relation_count": 29,
+      "current_pending_relation_count": 23,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q099",
+      "sid": "CH-047",
+      "question": "relations[7]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "将外棱缘错误的使用材料主语改为具体叠晕/压深步骤，并纠正身内用绿的材料目标；保留不同位置、条件和备选分支。",
+      "current_entity_count": 27,
+      "current_relation_count": 29,
+      "current_pending_relation_count": 23,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q100",
+      "sid": "CH-047",
+      "question": "relations[8]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "将外棱缘错误的使用材料主语改为具体叠晕/压深步骤，并纠正身内用绿的材料目标；保留不同位置、条件和备选分支。",
+      "current_entity_count": 27,
+      "current_relation_count": 29,
+      "current_pending_relation_count": 23,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q101",
+      "sid": "CH-047",
+      "question": "relations[9]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "将外棱缘错误的使用材料主语改为具体叠晕/压深步骤，并纠正身内用绿的材料目标；保留不同位置、条件和备选分支。",
+      "current_entity_count": 27,
+      "current_relation_count": 29,
+      "current_pending_relation_count": 23,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q102",
+      "sid": "CH-047",
+      "question": "relations[10]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "将外棱缘错误的使用材料主语改为具体叠晕/压深步骤，并纠正身内用绿的材料目标；保留不同位置、条件和备选分支。",
+      "current_entity_count": 27,
+      "current_relation_count": 29,
+      "current_pending_relation_count": 23,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q103",
+      "sid": "CH-047",
+      "question": "relations[11]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "将外棱缘错误的使用材料主语改为具体叠晕/压深步骤，并纠正身内用绿的材料目标；保留不同位置、条件和备选分支。",
+      "current_entity_count": 27,
+      "current_relation_count": 29,
+      "current_pending_relation_count": 23,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q104",
+      "sid": "CH-047",
+      "question": "relations[12]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "将外棱缘错误的使用材料主语改为具体叠晕/压深步骤，并纠正身内用绿的材料目标；保留不同位置、条件和备选分支。",
+      "current_entity_count": 27,
+      "current_relation_count": 29,
+      "current_pending_relation_count": 23,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q105",
+      "sid": "CH-047",
+      "question": "relations[13]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "将外棱缘错误的使用材料主语改为具体叠晕/压深步骤，并纠正身内用绿的材料目标；保留不同位置、条件和备选分支。",
+      "current_entity_count": 27,
+      "current_relation_count": 29,
+      "current_pending_relation_count": 23,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q106",
+      "sid": "CH-048",
+      "question": "“内”指身内或缘道内部位置关系不明；两晕为技法/结果表达方式待本体确认。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "译文明示其内为身内；两晕是空间设色结构，不是刷两遍。以身内作两晕步骤与位置说明保留，不填施作遍数二。",
+      "current_entity_count": 13,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 4,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q107",
+      "sid": "CH-048",
+      "question": "attributes[0]:属性不属于该子类",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "三晕棱间装的适用条件移入施作规定，避免将步骤字段挂在装饰制度上。",
+      "current_entity_count": 13,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 4,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q108",
+      "sid": "CH-048",
+      "question": "attributes[1]:属性不属于该子类",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "本条三处绿/青叠晕是带具体位置的施作实例，改作步骤；浅/深色在内外属于位置安排，不是运动方向，合并记入位置限定。",
+      "current_entity_count": 13,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 4,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q109",
+      "sid": "CH-048",
+      "question": "attributes[2]:属性不属于该子类",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "本条三处绿/青叠晕是带具体位置的施作实例，改作步骤；浅/深色在内外属于位置安排，不是运动方向，合并记入位置限定。",
+      "current_entity_count": 13,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 4,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q110",
+      "sid": "CH-048",
+      "question": "attributes[3]:属性不属于该子类",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "本条三处绿/青叠晕是带具体位置的施作实例，改作步骤；浅/深色在内外属于位置安排，不是运动方向，合并记入位置限定。",
+      "current_entity_count": 13,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 4,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q111",
+      "sid": "CH-048",
+      "question": "attributes[4]:属性不属于该子类",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "本条三处绿/青叠晕是带具体位置的施作实例，改作步骤；浅/深色在内外属于位置安排，不是运动方向，合并记入位置限定。",
+      "current_entity_count": 13,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 4,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q112",
+      "sid": "CH-048",
+      "question": "attributes[5]:属性不属于该子类",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "本条三处绿/青叠晕是带具体位置的施作实例，改作步骤；浅/深色在内外属于位置安排，不是运动方向，合并记入位置限定。",
+      "current_entity_count": 13,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 4,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q113",
+      "sid": "CH-048",
+      "question": "attributes[6]:属性不属于该子类",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "本条三处绿/青叠晕是带具体位置的施作实例，改作步骤；浅/深色在内外属于位置安排，不是运动方向，合并记入位置限定。",
+      "current_entity_count": 13,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 4,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q114",
+      "sid": "CH-048",
+      "question": "relations[9]:关系名越界",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "撤回制度自身“施作遍数”关系；两晕、三晕不等于施工遍数。两条提示对应同一处撤回。",
+      "current_entity_count": 13,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 4,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q115",
+      "sid": "CH-048",
+      "question": "relations[9]:自连需要人工复核",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "撤回制度自身“施作遍数”关系；两晕、三晕不等于施工遍数。两条提示对应同一处撤回。",
+      "current_entity_count": 13,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 4,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q116",
+      "sid": "CH-049",
+      "question": "“以紫矿压深”之后是否必然先于当心施作，取决于句间承接；当前按文字顺序建立“先于”，建议专家确认是否仅为并列说明。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "缘道红晕与当心青晕首先是空间配置，不能仅按句序推出压深必然先于当心。撤回跨空间先于断言，保留各色系内部明确的次序。",
+      "current_entity_count": 17,
+      "current_relation_count": 22,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q117",
+      "sid": "CH-049",
+      "question": "“浅色在外”可能统摄红叠晕各次色序；当前记录为红叠晕步骤的位置限定，具体每道色与内外位置的对应关系未强行展开。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "浅色在外保留为本条红晕位置安排，不扩展到全部色层的精确坐标。",
+      "current_entity_count": 17,
+      "current_relation_count": 22,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q118",
+      "sid": "CH-050",
+      "question": "原文省略施作对象；题解指为柱𬃊（柱础），但原文仅承“柱头”句，施作对象暂连“柱”，具体部位待核",
+      "historical_status": "待老师确认",
+      "previous_decision": "青晕莲华的对象涉及原文脱字与译文补释柱础。请核对底本原字；相关对象边暂挂起，不直接改写原文。",
+      "current_entity_count": 23,
+      "current_relation_count": 21,
+      "current_pending_relation_count": 1,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q119",
+      "sid": "CH-050",
+      "question": "“四合青绿退晕如意头”中“青绿退晕”为设色技法，是否需拆分为独立技法节点待核",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "保留四合青绿退晕如意头完整纹样名称；名称含技法词不等于必须拆成独立实体。",
+      "current_entity_count": 23,
+      "current_relation_count": 21,
+      "current_pending_relation_count": 1,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q120",
+      "sid": "CH-050",
+      "question": "relations[1]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "柱包含纹样的关系错误。改为该如意头纹样装饰于柱头，并补柱包含柱头的部位关系。",
+      "current_entity_count": 23,
+      "current_relation_count": 21,
+      "current_pending_relation_count": 1,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q121",
+      "sid": "CH-051",
+      "question": "“燕尾”“八白”据题解可能为彩画图案形式，是否为独立纹样及其与缘道的关系待专家确认。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "燕尾、八白在后续刷饰条及题解中作为图案讨论，可保留纹样；“枓绿、栱青之类”只是例举，不补出未列构件的配色。",
+      "current_entity_count": 16,
+      "current_relation_count": 12,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q122",
+      "sid": "CH-051",
+      "question": "“之类”表明此为配色搭配的示例性规定，是否还有其他构件的类似相间规则未明，保留条件与示例范围待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "燕尾、八白在后续刷饰条及题解中作为图案讨论，可保留纹样；“枓绿、栱青之类”只是例举，不补出未列构件的配色。",
+      "current_entity_count": 16,
+      "current_relation_count": 12,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q123",
+      "sid": "CH-051",
+      "question": "题解引梁先生、傅熹年之说谓“解绿”或应作“解缘（勾缘）”，此为题解独有解释，未填入候选属性，待专家审核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "解绿、解缘涉及校勘异说，保留原文解绿；请确认规范名及是否建立异写说明，不把考证意见直接设为唯一别称。",
+      "current_entity_count": 16,
+      "current_relation_count": 12,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q124",
+      "sid": "CH-052",
+      "question": "“并同”指由额、小额做法同檐额、梁栿之制，但由额、小额的确切所指题解亦称不明，暂以“参照做法”连接缘道叠晕做法，待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "由额、小额所指不明；丹地是衬底语境，卓柏装的具体构件未明。保留参照及局部scope，请确认对象，不补造构件连接。",
+      "current_entity_count": 36,
+      "current_relation_count": 39,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q125",
+      "sid": "CH-052",
+      "question": "“丹地”指丹粉衬地（色彩/底色），本体无底色类，未单独建实体；卓柏装的构件施作对象原文未明言，待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "由额、小额所指不明；丹地是衬底语境，卓柏装的具体构件未明。保留参照及局部scope，请确认对象，不补造构件连接。",
+      "current_entity_count": 36,
+      "current_relation_count": 39,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q126",
+      "sid": "CH-052",
+      "question": "广狭长短的具体量值须见丹粉刷饰条，本条仅以参照做法表达，未建定量规定。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "本句只参照丹粉刷饰，不补未出现的量值。后续按明确对象及对应条文再关联量规。",
+      "current_entity_count": 36,
+      "current_relation_count": 39,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q127",
+      "sid": "CH-052",
+      "question": "relations[13]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "缘道叠晕为技法，与檐额、梁栿改用作用于，不使用纹样的装饰于。",
+      "current_entity_count": 36,
+      "current_relation_count": 39,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q128",
+      "sid": "CH-052",
+      "question": "relations[14]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "缘道叠晕为技法，与檐额、梁栿改用作用于，不使用纹样的装饰于。",
+      "current_entity_count": 36,
+      "current_relation_count": 39,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q129",
+      "sid": "CH-052",
+      "question": "relations[37]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "卓柏装内用墨或紫檀点簇由具体步骤使用材料，保留丹地内和墨或紫檀的备选条件。",
+      "current_entity_count": 36,
+      "current_relation_count": 39,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q130",
+      "sid": "CH-052",
+      "question": "relations[38]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "卓柏装内用墨或紫檀点簇由具体步骤使用材料，保留丹地内和墨或紫檀的备选条件。",
+      "current_entity_count": 36,
+      "current_relation_count": 39,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q131",
+      "sid": "CH-054",
+      "question": "原文作“缘头”，题解作“椽头”，二者是否同指一部位待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "原文缘头与题解椽头涉及字形/校勘，请老师核定；不直接按相近字自动合并。",
+      "current_entity_count": 19,
+      "current_relation_count": 22,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q132",
+      "sid": "CH-054",
+      "question": "“或以五彩画四斜或簇六毬文锦”的施作部位承接柱头及柱脚为题解理解，备选关系范围待专家确认。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "译文可支持四斜或簇六毬文锦承接柱头、柱脚；以解释性依据保留备选范围，不拓展为柱身。",
+      "current_entity_count": 19,
+      "current_relation_count": 22,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q133",
+      "sid": "CH-055",
+      "question": "“或作翻卷华叶”与青绿叠晕缘之间的具体造型变体关系及备选范围需专家复核；当前未将“身内”独立定为构件。",
+      "historical_status": "待老师确认",
+      "previous_decision": "影作的身内及翻卷华叶涉及图案区域与真实构件的区分，不能只为凑施作对象子类而建构件。请确认图案内部层级及备选范围。",
+      "current_entity_count": 15,
+      "current_relation_count": 13,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q134",
+      "sid": "CH-055",
+      "question": "“长广”所对应的具体计量项目及丹粉刷饰中的制度内容依赖其他条文，本句未给数值。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "未给量值的条目保留原文参照，不机械补充下文所有尺寸。",
+      "current_entity_count": 15,
+      "current_relation_count": 13,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q135",
+      "sid": "CH-056",
+      "question": "缘道长、广数值依下项，本句未给出具体量值，需结合后续条目补充定量规定。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "未给量值的条目保留原文参照，不机械补充下文所有尺寸。",
+      "current_entity_count": 18,
+      "current_relation_count": 14,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q136",
+      "sid": "CH-056",
+      "question": "缘道“两尽头斜讹向下”的具体造型含义及是否与题解所说燕尾图形对应，原典文本未明确，待核。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "缘道为构件上的刷饰带，改为构件部位，原形态特征改记形状“两尽头斜讹向下”；保留文字，不推定为燕尾同义。",
+      "current_entity_count": 18,
+      "current_relation_count": 14,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q137",
+      "sid": "CH-056",
+      "question": "attributes[0]:属性不属于该子类",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "缘道为构件上的刷饰带，改为构件部位，原形态特征改记形状“两尽头斜讹向下”；保留文字，不推定为燕尾同义。",
+      "current_entity_count": 18,
+      "current_relation_count": 14,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q138",
+      "sid": "CH-057",
+      "question": "“之类……等同”表示并列构件适用相同做法，现以“类同”关系分别连接栿等各构件与枓；是否应以施作规定或参照做法表达共同适用，待核。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "“等同”指共同刷饰做法，不是各构件与枓互为纹样类同。删除八条类同，改以同一规制的适用范围记录列举构件。",
+      "current_entity_count": 13,
+      "current_relation_count": 2,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q139",
+      "sid": "CH-057",
+      "question": "“材之广”所指具体构件（随各构件自身之材广）在原文中未逐一指明，参照对象暂连枓，是否应分别参照各构件，待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "材广按各施作构件自身取值，不能统一参照枓宽。修改参照限定；另有原文五分上限、译文五分下限冲突，暂挂起下限断言，见N002。",
+      "current_entity_count": 13,
+      "current_relation_count": 2,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q140",
+      "sid": "CH-057",
+      "question": "relations[4]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "删除构件之间的八条类同边；共同适用范围写入白缘道规制限定，不能以构件分类关系代替共用做法。",
+      "current_entity_count": 13,
+      "current_relation_count": 2,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q141",
+      "sid": "CH-057",
+      "question": "relations[5]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "删除构件之间的八条类同边；共同适用范围写入白缘道规制限定，不能以构件分类关系代替共用做法。",
+      "current_entity_count": 13,
+      "current_relation_count": 2,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q142",
+      "sid": "CH-057",
+      "question": "relations[6]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "删除构件之间的八条类同边；共同适用范围写入白缘道规制限定，不能以构件分类关系代替共用做法。",
+      "current_entity_count": 13,
+      "current_relation_count": 2,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q143",
+      "sid": "CH-057",
+      "question": "relations[7]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "删除构件之间的八条类同边；共同适用范围写入白缘道规制限定，不能以构件分类关系代替共用做法。",
+      "current_entity_count": 13,
+      "current_relation_count": 2,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q144",
+      "sid": "CH-057",
+      "question": "relations[8]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "删除构件之间的八条类同边；共同适用范围写入白缘道规制限定，不能以构件分类关系代替共用做法。",
+      "current_entity_count": 13,
+      "current_relation_count": 2,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q145",
+      "sid": "CH-057",
+      "question": "relations[9]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "删除构件之间的八条类同边；共同适用范围写入白缘道规制限定，不能以构件分类关系代替共用做法。",
+      "current_entity_count": 13,
+      "current_relation_count": 2,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q146",
+      "sid": "CH-057",
+      "question": "relations[10]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "删除构件之间的八条类同边；共同适用范围写入白缘道规制限定，不能以构件分类关系代替共用做法。",
+      "current_entity_count": 13,
+      "current_relation_count": 2,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q147",
+      "sid": "CH-057",
+      "question": "relations[11]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "删除构件之间的八条类同边；共同适用范围写入白缘道规制限定，不能以构件分类关系代替共用做法。",
+      "current_entity_count": 13,
+      "current_relation_count": 2,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q148",
+      "sid": "CH-058",
+      "question": "燕尾与“头下面刷丹、近上棱刷白”两色的具体施作方式（刷丹处绘燕尾抑或刷白处）原文未明示，待核",
+      "historical_status": "待老师确认",
+      "previous_decision": "可确认下面刷丹、近上棱刷白；燕尾具体落在哪一色区的图形对应仍待核，不据文字直接生成复原图。",
+      "current_entity_count": 18,
+      "current_relation_count": 11,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q149",
+      "sid": "CH-058",
+      "question": "“中心空二分”指燕尾中心留空宽度为材厚四分中之二分，参照项目据上下文补释，待核",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "中心留二份以材厚四份为参照，保留2/4而非材分°；材厚对应正在施作的各构件，不统一绑定枓。",
+      "current_entity_count": 18,
+      "current_relation_count": 11,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q150",
+      "sid": "CH-058",
+      "question": "“材”具体所指构件（耍头/梁头等施作对象）原文未逐一指明，待核",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "中心留二份以材厚四份为参照，保留2/4而非材分°；材厚对应正在施作的各构件，不统一绑定枓。",
+      "current_entity_count": 18,
+      "current_relation_count": 11,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q151",
+      "sid": "CH-059",
+      "question": "“如里面”指刷饰做法同额之里侧，原文未展开具体做法，关系依据不足，待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "如里面可保留额里侧刷饰参照；当中一份刷八白可由现有定量规定表达，不需要新建本体大类。",
+      "current_entity_count": 11,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q152",
+      "sid": "CH-059",
+      "question": "“当中以一分”指在额广当中取一份刷八白，此做法未单独建定量规定，语义是否需独立节点待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "如里面可保留额里侧刷饰参照；当中一份刷八白可由现有定量规定表达，不需要新建本体大类。",
+      "current_entity_count": 11,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q153",
+      "sid": "CH-060",
+      "question": "“解粉线”为以粉线勾勒的操作，粉线作为色彩/材料及“解”作为技法的归属，本体中无明确对应关系名（似为留设部位或布置），暂以原文保留待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "解粉线可作为勾勒具体步骤；不必把粉线强行认作颜色或工具后才允许记录操作。",
+      "current_entity_count": 19,
+      "current_relation_count": 18,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q154",
+      "sid": "CH-060",
+      "question": "“难子”为屏风上构件/部位的具体形制（棂条类），依译文理解建为构件部位，其确切构件属性待专家核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "难子的具体形制仍需专业确认，保留原词和所属语境，不直接合并为棂条。",
+      "current_entity_count": 19,
+      "current_relation_count": 18,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q155",
+      "sid": "CH-061",
+      "question": "“亦于栱眼壁内”前承省略，影作施作位置依译文理解为栱眼壁之内，原文未直接言明影作，回指关系待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "栱眼壁承接影作可据译文保留；“广随项”只记录依项子宽度而定，不能补成等宽或固定1:1。",
+      "current_entity_count": 18,
+      "current_relation_count": 23,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q156",
+      "sid": "CH-061",
+      "question": "身内宽度随项子宽度而定，属定量规定但本体比例/参照表达方式是否适用待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "栱眼壁承接影作可据译文保留；“广随项”只记录依项子宽度而定，不能补成等宽或固定1:1。",
+      "current_entity_count": 18,
+      "current_relation_count": 23,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q157",
+      "sid": "CH-061",
+      "question": "attributes[11]:属性不属于该子类",
+      "historical_status": "待老师确认",
+      "previous_decision": "两脚是影作的纹样要素，不是实际构件部位。现有子类缺形状属性，暂挂起该属性；建议老师确认是否在纹样要素下允许形态特征。",
+      "current_entity_count": 18,
+      "current_relation_count": 23,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q158",
+      "sid": "CH-061",
+      "question": "relations[10]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "使用粉笔的主体应为解出华瓣、压棱两项具体步骤，分别作用于莲华及翻卷叶；不能让纹样直接使用工具。",
+      "current_entity_count": 18,
+      "current_relation_count": 23,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q159",
+      "sid": "CH-061",
+      "question": "relations[17]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "使用粉笔的主体应为解出华瓣、压棱两项具体步骤，分别作用于莲华及翻卷叶；不能让纹样直接使用工具。",
+      "current_entity_count": 18,
+      "current_relation_count": 23,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q160",
+      "sid": "CH-062",
+      "question": "“朱或丹”为备选配色组，同一影作莲华具体用色是否承前条“身内刷朱则莲华用丹”之对应规则，待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "土黄条中的朱或丹配色是否继承前条交叉用色，以及制度并同的完整范围未明。保留原文备选，不自动复制全部用色规则，请确认。",
+      "current_entity_count": 9,
+      "current_relation_count": 6,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q161",
+      "sid": "CH-063",
+      "question": "“制度并同”承接前条土黄刷饰制度（CH-062），具体同项范围需结合上下文核定；“合用丹处”以黄土代丹的排除/替代关系建议由人工复核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "土黄条中的朱或丹配色是否继承前条交叉用色，以及制度并同的完整范围未明。保留原文备选，不自动复制全部用色规则，请确认。",
+      "current_entity_count": 12,
+      "current_relation_count": 11,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q162",
+      "sid": "CH-064",
+      "question": "“余”所指范围（门、窗中除破子窗子桯及护缝之类以外的部分）依语境推断，需人工确认；“之类”表示列举未尽，是否还有其他部位待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "余在本句门窗语境内指所列部位以外部分；保留排除范围与之类未尽的边界，不推造其他部位。",
+      "current_entity_count": 16,
+      "current_relation_count": 13,
+      "current_pending_relation_count": 4,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q163",
+      "sid": "CH-064",
+      "question": "relations[5]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "丹、土朱分别由刷饰步骤使用，步骤作用于所列部位或门窗其余部分；保留若刷门窗条件，不能整门整窗一律土朱。",
+      "current_entity_count": 16,
+      "current_relation_count": 13,
+      "current_pending_relation_count": 4,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q164",
+      "sid": "CH-064",
+      "question": "relations[6]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "丹、土朱分别由刷饰步骤使用，步骤作用于所列部位或门窗其余部分；保留若刷门窗条件，不能整门整窗一律土朱。",
+      "current_entity_count": 16,
+      "current_relation_count": 13,
+      "current_pending_relation_count": 4,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q165",
+      "sid": "CH-064",
+      "question": "relations[7]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "丹、土朱分别由刷饰步骤使用，步骤作用于所列部位或门窗其余部分；保留若刷门窗条件，不能整门整窗一律土朱。",
+      "current_entity_count": 16,
+      "current_relation_count": 13,
+      "current_pending_relation_count": 4,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q166",
+      "sid": "CH-064",
+      "question": "relations[8]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "丹、土朱分别由刷饰步骤使用，步骤作用于所列部位或门窗其余部分；保留若刷门窗条件，不能整门整窗一律土朱。",
+      "current_entity_count": 16,
+      "current_relation_count": 13,
+      "current_pending_relation_count": 4,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q167",
+      "sid": "CH-065",
+      "question": "比例句中简称“画松装”，是否即“画松文装”待核；此处按组合名补全为同一实体",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "同条比例句的画松装可按上下文规范为画松文装，保留原称说明。",
+      "current_entity_count": 21,
+      "current_relation_count": 25,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q168",
+      "sid": "CH-065",
+      "question": "译文作“碾玉装占比为3/10”，与原文“碾玉装二分”不合；题解将“分”释为全屋彩画量占比，属解释性内容，未填入候选，待核",
+      "historical_status": "待老师确认",
+      "previous_decision": "原文与译文比例冲突：首组碾玉二分/译三分，末组原文三晕棱间一分/译二分。保留原文，挂起相冲突的比例属性，请老师核对底本；不以总和凑十替代校勘。",
+      "current_entity_count": 21,
+      "current_relation_count": 25,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q169",
+      "sid": "CH-065",
+      "question": "题解对“松文”含义（松针或刀剑纹饰）有考证，倾向松树枝叶，原文未明言，留待专家审核",
+      "historical_status": "待老师确认",
+      "previous_decision": "题解倾向松树枝叶但含考证，不足以唯一确定图形；请确认图案释义后再用于平台绘制。",
+      "current_entity_count": 21,
+      "current_relation_count": 25,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q170",
+      "sid": "CH-066",
+      "question": "该组合与CH-065所列各相间装（如青绿三晕棱间及碾玉间画松文装）是否完全对应，原文以“等”概括，组合内部各装具体分数未在本条给出，待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "等表示概括列举，不保证与上条每组完全对应；随宜加减保留为施作条件，不推定增减率或新增本体字段。",
+      "current_entity_count": 6,
+      "current_relation_count": 5,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q171",
+      "sid": "CH-066",
+      "question": "“随宜加减”为不定量调整，定量规定仅能记录基准性质，具体加减幅度无据，待核是否需要扩充本体表达。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "等表示概括列举，不保证与上条每组完全对应；随宜加减保留为施作条件，不推定增减率或新增本体字段。",
+      "current_entity_count": 6,
+      "current_relation_count": 5,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q172",
+      "sid": "CH-067",
+      "question": "“彩画之上”为施作对象表面，暂以“建筑构件”记“彩画”，其作为彩画成品表面的类型归属待核；该步为条件性备选做法。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "彩画之上指涂饰表面，不能将彩画归为建筑构件。撤下该假构件及相关边，位置原词保留在揩搌步骤限定。",
+      "current_entity_count": 15,
+      "current_relation_count": 18,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q173",
+      "sid": "CH-067",
+      "question": "“文武火”为火候限定，本体步骤属性无对应字段，暂记于施作方向之外、未表达，待扩充属性。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "文武火为火候，保留在炼油操作说明及关系范围中；不能写为施作方向，无需为此改变八大类。",
+      "current_entity_count": 15,
+      "current_relation_count": 18,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q174",
+      "sid": "CH-067",
+      "question": "指定粉应为黄色，属材料呈色要求，暂无合适关系表达，待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "“粉色黄”的状态主体及判断含义仍需专业核对，不根据一般化学常识改写原典。保留原词，请老师明确。",
+      "current_entity_count": 15,
+      "current_relation_count": 18,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q175",
+      "sid": "CH-067",
+      "question": "attributes[1]:属性值为空或非字符串",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "删除空字符串施作方向属性；没有方向信息不等于方向为空的知识断言。",
+      "current_entity_count": 15,
+      "current_relation_count": 18,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q176",
+      "sid": "CH-068",
+      "question": "“各减数”所减的基数承接前文“五彩遍装亭子、廊屋、散舍之类，五尺五寸”，但殿宇、楼阁是否同属五彩遍装及参照基数需人工确认。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "依据本条原文及译文确认功限基数、加十分之一和右各一功的统摄范围；贴金出褫每尺一功半独立记录，不与前面尺数/功混算。",
+      "current_entity_count": 20,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q177",
+      "sid": "CH-068",
+      "question": "“者同”指与描白地枝条华加数十分之一相同，此回指依语序解析，需人工复核；译文作“琐文装四出、六出锦”，原文未明言琐文。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "依据本条原文及译文确认功限基数、加十分之一和右各一功的统摄范围；贴金出褫每尺一功半独立记录，不与前面尺数/功混算。",
+      "current_entity_count": 20,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q178",
+      "sid": "CH-068",
+      "question": "“右各一功”统摄上文诸条功限，具体覆盖范围（是否含减加之后的数值）需人工确认。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "依据本条原文及译文确认功限基数、加十分之一和右各一功的统摄范围；贴金出褫每尺一功半独立记录，不与前面尺数/功混算。",
+      "current_entity_count": 20,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q179",
+      "sid": "CH-068",
+      "question": "relations[4]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "亭子、廊屋、散舍为建筑类型，不是建筑构件。撤下误分类节点及制度装饰于边，将建筑类型保留为功限条件；是否增设子类另列208。",
+      "current_entity_count": 20,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q180",
+      "sid": "CH-068",
+      "question": "relations[5]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "亭子、廊屋、散舍为建筑类型，不是建筑构件。撤下误分类节点及制度装饰于边，将建筑类型保留为功限条件；是否增设子类另列208。",
+      "current_entity_count": 20,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q181",
+      "sid": "CH-068",
+      "question": "relations[6]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "亭子、廊屋、散舍为建筑类型，不是建筑构件。撤下误分类节点及制度装饰于边，将建筑类型保留为功限条件；是否增设子类另列208。",
+      "current_entity_count": 20,
+      "current_relation_count": 10,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q182",
+      "sid": "CH-069",
+      "question": "本段为功限条文，“一十二尺”等的用功基准（每功所作尺数）仅由前条CH-068“右各一功”承接推知，当前text未明言，需人工确认各定量规定的参照项目与用功基准。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "CH-074译文末明确自青绿至合朱刷诸项按所计数分别为一功。补充跨条基准依据，不擅改称每日或工日。",
+      "current_entity_count": 12,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q183",
+      "sid": "CH-069",
+      "question": "“红或抢金碾玉”为备选并列，拆分为红碾玉、抢金碾玉两个制度名称系规范化处理，原文未单独出现，待核是否应合并为一个备选组记录。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "红或抢金碾玉保留两个备选分支；减数参照同句对应的亭廊散舍基数，保留12/20/25尺，不计算派生数。",
+      "current_entity_count": 12,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q184",
+      "sid": "CH-069",
+      "question": "“减数”的参照数为同句亭子、廊屋、散舍之数，已用参照规定关系表达；本体对减法参照的表达是否充分待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "红或抢金碾玉保留两个备选分支；减数参照同句对应的亭廊散舍基数，保留12/20/25尺，不计算派生数。",
+      "current_entity_count": 12,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q185",
+      "sid": "CH-069",
+      "question": "relations[15]:关系名越界",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "参照规定并非现有关系。用定量规定已有参照项目记明所参照基数及范围，撤回越界关系；不随意改名为约束规定。",
+      "current_entity_count": 12,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q186",
+      "sid": "CH-069",
+      "question": "relations[16]:关系名越界",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "参照规定并非现有关系。用定量规定已有参照项目记明所参照基数及范围，撤回越界关系；不随意改名为约束规定。",
+      "current_entity_count": 12,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q187",
+      "sid": "CH-069",
+      "question": "relations[17]:关系名越界",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "参照规定并非现有关系。用定量规定已有参照项目记明所参照基数及范围，撤回越界关系；不随意改名为约束规定。",
+      "current_entity_count": 12,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q188",
+      "sid": "CH-070",
+      "question": "工限类内容：各彩画做法与建筑类型对应的功限尺数及减率，现行八类与定量规定属性（计量项目、参照项目等）难以完整表达每日工效语义，需扩充本体后建模。",
+      "historical_status": "待老师确认",
+      "previous_decision": "现有定量规定可补录45尺、140尺及明示减率；但间红三晕、间结华或卓柏的再减与前面减率是否叠加、以何为基数，需老师确认。清楚的基准先入候选，叠加结果不计算。",
+      "current_entity_count": 7,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q189",
+      "sid": "CH-070",
+      "question": "工限类内容：同上，涉及多种建筑类型与做法分支（若、或备选）的功限减率，待本体扩充或确认定量规定能否承载多约束对象及条件限定。",
+      "historical_status": "待老师确认",
+      "previous_decision": "现有定量规定可补录45尺、140尺及明示减率；但间红三晕、间结华或卓柏的再减与前面减率是否叠加、以何为基数，需老师确认。清楚的基准先入候选，叠加结果不计算。",
+      "current_entity_count": 7,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q190",
+      "sid": "CH-070",
+      "question": "未生成结构化候选；需核查是否属于研究范围未覆盖或模型漏抽",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "CH-070空结果属于漏抽，已按原文明示基准和减率补录定量规定，不增设功限大类。",
+      "current_entity_count": 7,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q191",
+      "sid": "CH-071",
+      "question": "本条为每日功限类规定，“一百六十尺”为每工施作尺度；现以定量规定表达，但“每工/每日”基准本体无明确属性，待扩充。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "一功基准由CH-074译文总结支持；160尺及其减数按原文保留，不能混称一日，也不计算现代面积。",
+      "current_entity_count": 15,
+      "current_relation_count": 12,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q192",
+      "sid": "CH-071",
+      "question": "“减数”所减基数承前句廊屋等一百六十尺，已作参照项目记录，待人工确认。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "一功基准由CH-074译文总结支持；160尺及其减数按原文保留，不能混称一日，也不计算现代面积。",
+      "current_entity_count": 15,
+      "current_relation_count": 12,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q193",
+      "sid": "CH-072",
+      "question": "本条为功限（每日工效）记述，定量规定的参照项目（以何为基准的每日功限、减数所减之基数）原文未明示，本体对工限语义表达是否充分待核；墨缘道是否也按厅堂等项减十分之一抑或对一百八十尺基数减之，原文未明确，保留待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "墨缘道减十分之一的基数是180尺还是已减过的分支基数不明。保留减率原文，挂起唯一基数绑定，请确认。",
+      "current_entity_count": 11,
+      "current_relation_count": 6,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q194",
+      "sid": "CH-073",
+      "question": "“同”承接的功限基准需结合本条后文及功限体例确认；当前仅将抹绿做法纳入同一功限范围，未额外推断其独立量值。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "结合本条译文及CH-074一功总结，可记录180尺基准与所列对象减三分之一；保留同的对象范围，不计算结果。",
+      "current_entity_count": 19,
+      "current_relation_count": 21,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q195",
+      "sid": "CH-073",
+      "question": "“一百八十尺”为功限数值，但原文未明写对应的用工基准（如每一工所完成的面积或长度）；候选仅记录量值与单位，不作推算。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "结合本条译文及CH-074一功总结，可记录180尺基准与所列对象减三分之一；保留同的对象范围，不计算结果。",
+      "current_entity_count": 19,
+      "current_relation_count": 21,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q196",
+      "sid": "CH-073",
+      "question": "“减数三分之一”的基数应确认是否即前项“一百八十尺”；候选保留原文减法与比例，未计算派生数值。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "结合本条译文及CH-074一功总结，可记录180尺基准与所列对象减三分之一；保留同的对象范围，不计算结果。",
+      "current_entity_count": 19,
+      "current_relation_count": 21,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q197",
+      "sid": "CH-074",
+      "question": "本条为彩画作功限条文，以“尺数/功”计工并含多种做法的加减比例（减数若干分之一、加数若干分之一），其计量对象为工日而非施作遍数，现有八类与属性无法充分表达“工限基准尺数+条件增减比例”语义，需扩充本体（如功限规定类）后再抽取。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "CH-074并非必须扩充本体才能记录。已补录各分项明示基准、增减率及条件，使用定量规定；数值保留古单位，不将功限误记为遍数或现代面积。",
+      "current_entity_count": 23,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q198",
+      "sid": "CH-074",
+      "question": "同属功限条文，含“同”“减数”等承接与比例限定，待本体扩充后抽取。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "CH-074并非必须扩充本体才能记录。已补录各分项明示基准、增减率及条件，使用定量规定；数值保留古单位，不将功限误记为遍数或现代面积。",
+      "current_entity_count": 23,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q199",
+      "sid": "CH-074",
+      "question": "功限条文，待本体扩充后抽取。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "CH-074并非必须扩充本体才能记录。已补录各分项明示基准、增减率及条件，使用定量规定；数值保留古单位，不将功限误记为遍数或现代面积。",
+      "current_entity_count": 23,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q200",
+      "sid": "CH-074",
+      "question": "功限条文，含五彩或碾玉装造备选与加减比例，待本体扩充后抽取。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "CH-074并非必须扩充本体才能记录。已补录各分项明示基准、增减率及条件，使用定量规定；数值保留古单位，不将功限误记为遍数或现代面积。",
+      "current_entity_count": 23,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q201",
+      "sid": "CH-074",
+      "question": "功限条文，待本体扩充后抽取。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "CH-074并非必须扩充本体才能记录。已补录各分项明示基准、增减率及条件，使用定量规定；数值保留古单位，不将功限误记为遍数或现代面积。",
+      "current_entity_count": 23,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q202",
+      "sid": "CH-074",
+      "question": "功限条文，含“高广一丈以上”尺寸条件，待本体扩充后抽取。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "CH-074并非必须扩充本体才能记录。已补录各分项明示基准、增减率及条件，使用定量规定；数值保留古单位，不将功限误记为遍数或现代面积。",
+      "current_entity_count": 23,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q203",
+      "sid": "CH-074",
+      "question": "功限条文，待本体扩充后抽取。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "CH-074并非必须扩充本体才能记录。已补录各分项明示基准、增减率及条件，使用定量规定；数值保留古单位，不将功限误记为遍数或现代面积。",
+      "current_entity_count": 23,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q204",
+      "sid": "CH-074",
+      "question": "功限条文，含施工条件（须缚棚阁）的减数规定，待本体扩充后抽取。",
+      "historical_status": "待老师确认",
+      "previous_decision": "华表柱未明示独立基准尺数，缚棚阁减率不能凭相邻条目确定基数；桐油每斤、煎合在内处在功限段，不能直接断言为用胶料例。请分别确认其计工口径。",
+      "current_entity_count": 23,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q205",
+      "sid": "CH-074",
+      "question": "功限及用桐油料例条文，“每一斤”为用胶/用油料例，需料例表达，待本体扩充后抽取。",
+      "historical_status": "待老师确认",
+      "previous_decision": "华表柱未明示独立基准尺数，缚棚阁减率不能凭相邻条目确定基数；桐油每斤、煎合在内处在功限段，不能直接断言为用胶料例。请分别确认其计工口径。",
+      "current_entity_count": 23,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q206",
+      "sid": "CH-074",
+      "question": "总结以上各条均计为一功，属工限语义，现有本体无法表达，待扩充。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "已恢复CH-074明确功限内容；右各一功是本段基准，保留总括说明，并作为相应前条的解释依据。",
+      "current_entity_count": 23,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q207",
+      "sid": "CH-074",
+      "question": "未生成结构化候选；需核查是否属于研究范围未覆盖或模型漏抽",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "已恢复CH-074明确功限内容；右各一功是本段基准，保留总括说明，并作为相应前条的解释依据。",
+      "current_entity_count": 23,
+      "current_relation_count": 0,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q208",
+      "sid": "CH-075",
+      "question": "“殿宇、楼阁”“廊屋、散舍”为建筑类型限定，本体无建筑类型子类，暂以条件字符串记录，是否需扩展施作对象类型待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "建筑类型条件可先以文字限定保存。请老师决定是否需在施作对象中增建筑类型子类；本轮不将殿宇楼阁伪装成构件。",
+      "current_entity_count": 70,
+      "current_relation_count": 48,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q209",
+      "sid": "CH-075",
+      "question": "“准折计之”的具体折算方式原文未给出数值，仅记录适用条件与备选方式，待核是否需补充规定表达。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "准折计之没有数值就不推算；煎合可作具体步骤使用苏木、白矾，原文替代范围保留为中绵胭脂的备选，不声称制得天然胭脂。",
+      "current_entity_count": 70,
+      "current_relation_count": 48,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q210",
+      "sid": "CH-075",
+      "question": "“合色”是否构成独立技法或设色方法，以及“煎合”是否应建步骤节点，本体表达不充分，待核。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "准折计之没有数值就不推算；煎合可作具体步骤使用苏木、白矾，原文替代范围保留为中绵胭脂的备选，不声称制得天然胭脂。",
+      "current_entity_count": 70,
+      "current_relation_count": 48,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q211",
+      "sid": "CH-076",
+      "question": "“颗块者”指土朱须用颗块形态，本体暂无颜料形态属性，待扩充或归入施作规定。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "土朱须颗块者可用施作规定加限定材料表达，限定衬金粉场景；无需给所有颜料增加形态字段。",
+      "current_entity_count": 53,
+      "current_relation_count": 36,
+      "current_pending_relation_count": 1,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q212",
+      "sid": "CH-076",
+      "question": "合色绿华与草色绿华同名而异方，当前以scope区分合色/草色两支，是否应拆分为不同色彩实例待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "同名绿华两方保留不同配方语境，不先合并物质身份；“减”未明示全部或部分，不能设成零或完全排除，请老师确认。",
+      "current_entity_count": 53,
+      "current_relation_count": 36,
+      "current_pending_relation_count": 1,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q213",
+      "sid": "CH-076",
+      "question": "“即减”之减量为减去全部还是部分未明，暂以施作规定记录，具体量值待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "同名绿华两方保留不同配方语境，不先合并物质身份；“减”未明示全部或部分，不能设成零或完全排除，请老师确认。",
+      "current_entity_count": 53,
+      "current_relation_count": 36,
+      "current_pending_relation_count": 1,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q214",
+      "sid": "CH-077",
+      "question": "'滤粉''熁粉''描金'为用法的工序性说明，本体无对应步骤关系，暂以范围限定记录，待核是否需扩充本体表达。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "滤粉、熁粉、描金均可用现有步骤类型表达，用料及用法按原句保留；不需要新增步骤关系名。",
+      "current_entity_count": 25,
+      "current_relation_count": 13,
+      "current_pending_relation_count": 3,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q215",
+      "sid": "CH-077",
+      "question": "'各四钱'为松脂、定粉、黄丹三者共同取值，已分别建规定；木扎为煎合之燃料/耗材，其角色待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "松脂、定粉、黄丹各四钱的分配可以确定；木扎/木札的燃料或耗材角色尚不能只凭词面断定，保留原名，请老师确认。",
+      "current_entity_count": 25,
+      "current_relation_count": 13,
+      "current_pending_relation_count": 3,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q216",
+      "sid": "CH-078",
+      "question": "“拢窨在内”表示拢窨工序包含在用胶量之内，其语义超出当前定量规定属性，需确认如何表达；“用下项”指用胶系据节名“用胶料例”及译文推定，待核。",
+      "historical_status": "核对后保留/说明",
+      "previous_decision": "结合用胶料例标题和译文保留每斤颜料用胶及拢窨在内范围；用鳔补鳔胶材料，煎合桐油补具体步骤。不能把局部鳔胶要求扩展为所有用胶均为鳔胶。",
+      "current_entity_count": 65,
+      "current_relation_count": 34,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q217",
+      "sid": "CH-078",
+      "question": "“用鳔”指须用鳔胶，当前仅以条件记录；是否需建鳔胶材料实体及关系待核。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "结合用胶料例标题和译文保留每斤颜料用胶及拢窨在内范围；用鳔补鳔胶材料，煎合桐油补具体步骤。不能把局部鳔胶要求扩展为所有用胶均为鳔胶。",
+      "current_entity_count": 65,
+      "current_relation_count": 34,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q218",
+      "sid": "CH-078",
+      "question": "“煎合”为对桐油的加工方式，是否需建技法/步骤实体待核。",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "结合用胶料例标题和译文保留每斤颜料用胶及拢窨在内范围；用鳔补鳔胶材料，煎合桐油补具体步骤。不能把局部鳔胶要求扩展为所有用胶均为鳔胶。",
+      "current_entity_count": 65,
+      "current_relation_count": 34,
+      "current_pending_relation_count": 2,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q219",
+      "sid": "CH-079",
+      "question": "“右为上等”表五彩装饰（含间用金）、青绿碾玉为上等做法；等第属性在现有本体中无对应字段，待扩充本体表达做法等级。",
+      "historical_status": "待老师确认",
+      "previous_decision": "本段上中下等是做法等第，不是纹样品第，也不等于做法类同。撤回三条类同；请确认在装饰制度/设色方法上增加等第字段，核定后补回等级事实，不恢复纹样品第。",
+      "current_entity_count": 17,
+      "current_relation_count": 3,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q220",
+      "sid": "CH-079",
+      "question": "“右为中等”表上述做法为中等，本体无等第属性，待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "本段上中下等是做法等第，不是纹样品第，也不等于做法类同。撤回三条类同；请确认在装饰制度/设色方法上增加等第字段，核定后补回等级事实，不恢复纹样品第。",
+      "current_entity_count": 17,
+      "current_relation_count": 3,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q221",
+      "sid": "CH-079",
+      "question": "“右为下等”表丹粉赤白、刷土黄及刷门窗版壁等为下等；“同”指门窗等刷饰与丹粉赤白同等第，具体关系（类同或同等第）待核。",
+      "historical_status": "待老师确认",
+      "previous_decision": "本段上中下等是做法等第，不是纹样品第，也不等于做法类同。撤回三条类同；请确认在装饰制度/设色方法上增加等第字段，核定后补回等级事实，不恢复纹样品第。",
+      "current_entity_count": 17,
+      "current_relation_count": 3,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q222",
+      "sid": "CH-079",
+      "question": "relations[0]:关系方向或类型不匹配",
+      "historical_status": "待老师确认",
+      "previous_decision": "本段上中下等是做法等第，不是纹样品第，也不等于做法类同。撤回三条类同；请确认在装饰制度/设色方法上增加等第字段，核定后补回等级事实，不恢复纹样品第。",
+      "current_entity_count": 17,
+      "current_relation_count": 3,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q223",
+      "sid": "CH-079",
+      "question": "relations[1]:关系方向或类型不匹配",
+      "historical_status": "待老师确认",
+      "previous_decision": "本段上中下等是做法等第，不是纹样品第，也不等于做法类同。撤回三条类同；请确认在装饰制度/设色方法上增加等第字段，核定后补回等级事实，不恢复纹样品第。",
+      "current_entity_count": 17,
+      "current_relation_count": 3,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q224",
+      "sid": "CH-079",
+      "question": "relations[5]:关系方向或类型不匹配",
+      "historical_status": "待老师确认",
+      "previous_decision": "本段上中下等是做法等第，不是纹样品第，也不等于做法类同。撤回三条类同；请确认在装饰制度/设色方法上增加等第字段，核定后补回等级事实，不恢复纹样品第。",
+      "current_entity_count": 17,
+      "current_relation_count": 3,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q225",
+      "sid": "CH-079",
+      "question": "relations[6]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "本段“同”承接下等等级，不能据此推出丹粉赤白装饰门窗等五个新施作关系。撤回误边；实际刷饰用料以CH-060/064等明示施作条目为据。",
+      "current_entity_count": 17,
+      "current_relation_count": 3,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q226",
+      "sid": "CH-079",
+      "question": "relations[7]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "本段“同”承接下等等级，不能据此推出丹粉赤白装饰门窗等五个新施作关系。撤回误边；实际刷饰用料以CH-060/064等明示施作条目为据。",
+      "current_entity_count": 17,
+      "current_relation_count": 3,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q227",
+      "sid": "CH-079",
+      "question": "relations[8]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "本段“同”承接下等等级，不能据此推出丹粉赤白装饰门窗等五个新施作关系。撤回误边；实际刷饰用料以CH-060/064等明示施作条目为据。",
+      "current_entity_count": 17,
+      "current_relation_count": 3,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q228",
+      "sid": "CH-079",
+      "question": "relations[9]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "本段“同”承接下等等级，不能据此推出丹粉赤白装饰门窗等五个新施作关系。撤回误边；实际刷饰用料以CH-060/064等明示施作条目为据。",
+      "current_entity_count": 17,
+      "current_relation_count": 3,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    },
+    {
+      "id": "Q229",
+      "sid": "CH-079",
+      "question": "relations[10]:关系方向或类型不匹配",
+      "historical_status": "已修正关联记录",
+      "previous_decision": "本段“同”承接下等等级，不能据此推出丹粉赤白装饰门窗等五个新施作关系。撤回误边；实际刷饰用料以CH-060/064等明示施作条目为据。",
+      "current_entity_count": 17,
+      "current_relation_count": 3,
+      "current_pending_relation_count": 0,
+      "scope": "条目级回查计数，不等于该问题已重新通过专家审核"
+    }
+  ],
+  "corrections": [
+    {
+      "seq": 27,
+      "at": "2026-11-08T12:43:40.684716+00:00",
+      "kind": "edge",
+      "id": "Af1c8379e16ed5ebaa54b",
+      "before": {
+        "id": "Af1c8379e16ed5ebaa54b",
+        "sid": "CH-048",
+        "source": "E00fee5bc91a962433fb5",
+        "target": "E01f388ec880442ed1748",
+        "kind": "relations",
+        "predicate": "采用技法",
+        "value": "",
+        "status": "候选",
+        "pending_ids": [],
+        "entry_pending_ids": [],
+        "evidence": [
+          {
+            "source_sid": "CH-048",
+            "source_field": "text",
+            "quote": "其外棱缘道用绿叠晕，浅色在内",
+            "occurrence": 1,
+            "start": 0,
+            "end": 14,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "外棱缘道",
+          "alternative_group": ""
+        },
+        "original_record": "CH-048/relations/0",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": true
+      },
+      "after": {
+        "id": "Af1c8379e16ed5ebaa54b",
+        "sid": "CH-048",
+        "source": "E00fee5bc91a962433fb5",
+        "target": "E01f388ec880442ed1748",
+        "kind": "relations",
+        "predicate": "采用技法",
+        "value": "",
+        "status": "待确认",
+        "pending_ids": [],
+        "entry_pending_ids": [],
+        "evidence": [
+          {
+            "source_sid": "CH-048",
+            "source_field": "text",
+            "quote": "其外棱缘道用绿叠晕，浅色在内",
+            "occurrence": 1,
+            "start": 0,
+            "end": 14,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "外棱缘道",
+          "alternative_group": ""
+        },
+        "original_record": "CH-048/relations/0",
+        "audit_note": "本轮规则回查：目标类别为步骤，与采用技法预期的技法不一致，需复核语义。",
+        "active": true
+      },
+      "reason": "本轮发现关系类别越界；保留原候选并单独待确认"
+    },
+    {
+      "seq": 26,
+      "at": "2026-11-08T12:43:40.680570+00:00",
+      "kind": "edge",
+      "id": "Ad7420f42ff00debf3e68",
+      "before": {
+        "id": "Ad7420f42ff00debf3e68",
+        "sid": "CH-048",
+        "source": "E00fee5bc91a962433fb5",
+        "target": "Ef97510aa94c875d4dfde",
+        "kind": "relations",
+        "predicate": "采用技法",
+        "value": "",
+        "status": "候选",
+        "pending_ids": [],
+        "entry_pending_ids": [],
+        "evidence": [
+          {
+            "source_sid": "CH-048",
+            "source_field": "text",
+            "quote": "次以青叠晕，浅色在外",
+            "occurrence": 1,
+            "start": 15,
+            "end": 25,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "外棱缘道",
+          "alternative_group": ""
+        },
+        "original_record": "CH-048/relations/1",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": true
+      },
+      "after": {
+        "id": "Ad7420f42ff00debf3e68",
+        "sid": "CH-048",
+        "source": "E00fee5bc91a962433fb5",
+        "target": "Ef97510aa94c875d4dfde",
+        "kind": "relations",
+        "predicate": "采用技法",
+        "value": "",
+        "status": "待确认",
+        "pending_ids": [],
+        "entry_pending_ids": [],
+        "evidence": [
+          {
+            "source_sid": "CH-048",
+            "source_field": "text",
+            "quote": "次以青叠晕，浅色在外",
+            "occurrence": 1,
+            "start": 15,
+            "end": 25,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "外棱缘道",
+          "alternative_group": ""
+        },
+        "original_record": "CH-048/relations/1",
+        "audit_note": "本轮规则回查：目标类别为步骤，与采用技法预期的技法不一致，需复核语义。",
+        "active": true
+      },
+      "reason": "本轮发现关系类别越界；保留原候选并单独待确认"
+    },
+    {
+      "seq": 25,
+      "at": "2026-11-08T12:43:40.678122+00:00",
+      "kind": "edge",
+      "id": "Ab46077c8967119575ebd",
+      "before": {
+        "id": "Ab46077c8967119575ebd",
+        "sid": "CH-036",
+        "source": "E1a530ad62a8539519310",
+        "target": "E4095d1d416da793fa466",
+        "kind": "relations",
+        "predicate": "使用色彩",
+        "value": "",
+        "status": "候选",
+        "pending_ids": [],
+        "entry_pending_ids": [
+          64,
+          65,
+          66
+        ],
+        "evidence": [
+          {
+            "source_sid": "CH-036",
+            "source_field": "text",
+            "quote": "青、红地，如白地上单枝条，用二绿，随墨以绿华合粉，罩以三绿、二绿节淡。",
+            "occurrence": 1,
+            "start": 124,
+            "end": 159,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "青、红地",
+          "scope": "随墨以绿华合粉",
+          "alternative_group": ""
+        },
+        "original_record": "CH-036/relations/27",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": true
+      },
+      "after": {
+        "id": "Ab46077c8967119575ebd",
+        "sid": "CH-036",
+        "source": "E1a530ad62a8539519310",
+        "target": "E4095d1d416da793fa466",
+        "kind": "relations",
+        "predicate": "使用色彩",
+        "value": "",
+        "status": "待确认",
+        "pending_ids": [],
+        "entry_pending_ids": [
+          64,
+          65,
+          66
+        ],
+        "evidence": [
+          {
+            "source_sid": "CH-036",
+            "source_field": "text",
+            "quote": "青、红地，如白地上单枝条，用二绿，随墨以绿华合粉，罩以三绿、二绿节淡。",
+            "occurrence": 1,
+            "start": 124,
+            "end": 159,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "青、红地",
+          "scope": "随墨以绿华合粉",
+          "alternative_group": ""
+        },
+        "original_record": "CH-036/relations/27",
+        "audit_note": "本轮规则回查：目标类别为颜料，与使用色彩预期的色彩不一致，需复核语义。",
+        "active": true
+      },
+      "reason": "本轮发现关系类别越界；保留原候选并单独待确认"
+    },
+    {
+      "seq": 24,
+      "at": "2026-11-08T12:43:40.675467+00:00",
+      "kind": "edge",
+      "id": "Aac0c67518a617c6d8161",
+      "before": {
+        "id": "Aac0c67518a617c6d8161",
+        "sid": "CH-039",
+        "source": "E229666a61f5f20b9e005",
+        "target": "Ea60d3c2db1f64c4beb4e",
+        "kind": "relations",
+        "predicate": "采用设色方法",
+        "value": "",
+        "status": "候选",
+        "pending_ids": [],
+        "entry_pending_ids": [
+          78
+        ],
+        "evidence": [
+          {
+            "source_sid": "CH-039",
+            "source_field": "text",
+            "quote": "如身内红地，即以青地作碾玉，或亦用五彩装",
+            "occurrence": 1,
+            "start": 159,
+            "end": 179,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "如身内红地，亦可用五彩装",
+          "scope": "",
+          "alternative_group": "E"
+        },
+        "original_record": "CH-039/relations/24",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": true
+      },
+      "after": {
+        "id": "Aac0c67518a617c6d8161",
+        "sid": "CH-039",
+        "source": "E229666a61f5f20b9e005",
+        "target": "Ea60d3c2db1f64c4beb4e",
+        "kind": "relations",
+        "predicate": "采用设色方法",
+        "value": "",
+        "status": "待确认",
+        "pending_ids": [],
+        "entry_pending_ids": [
+          78
+        ],
+        "evidence": [
+          {
+            "source_sid": "CH-039",
+            "source_field": "text",
+            "quote": "如身内红地，即以青地作碾玉，或亦用五彩装",
+            "occurrence": 1,
+            "start": 159,
+            "end": 179,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "如身内红地，亦可用五彩装",
+          "scope": "",
+          "alternative_group": "E"
+        },
+        "original_record": "CH-039/relations/24",
+        "audit_note": "本轮规则回查：目标类别为装饰制度，与采用设色方法预期的设色方法不一致，需复核语义。",
+        "active": true
+      },
+      "reason": "本轮发现关系类别越界；保留原候选并单独待确认"
+    },
+    {
+      "seq": 23,
+      "at": "2026-11-08T12:43:40.672506+00:00",
+      "kind": "edge",
+      "id": "A70b1a21d9c4f2ecf7afd",
+      "before": {
+        "id": "A70b1a21d9c4f2ecf7afd",
+        "sid": "CH-039",
+        "source": "Eb971e43b1a8f657fafcf",
+        "target": "Ea60d3c2db1f64c4beb4e",
+        "kind": "relations",
+        "predicate": "采用设色方法",
+        "value": "",
+        "status": "候选",
+        "pending_ids": [],
+        "entry_pending_ids": [
+          78
+        ],
+        "evidence": [
+          {
+            "source_sid": "CH-039",
+            "source_field": "text",
+            "quote": "如身内红地，即以青地作碾玉，或亦用五彩装",
+            "occurrence": 1,
+            "start": 159,
+            "end": 179,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "如身内红地，以青地作碾玉",
+          "scope": "",
+          "alternative_group": "E"
+        },
+        "original_record": "CH-039/relations/23",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": true
+      },
+      "after": {
+        "id": "A70b1a21d9c4f2ecf7afd",
+        "sid": "CH-039",
+        "source": "Eb971e43b1a8f657fafcf",
+        "target": "Ea60d3c2db1f64c4beb4e",
+        "kind": "relations",
+        "predicate": "采用设色方法",
+        "value": "",
+        "status": "待确认",
+        "pending_ids": [],
+        "entry_pending_ids": [
+          78
+        ],
+        "evidence": [
+          {
+            "source_sid": "CH-039",
+            "source_field": "text",
+            "quote": "如身内红地，即以青地作碾玉，或亦用五彩装",
+            "occurrence": 1,
+            "start": 159,
+            "end": 179,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "如身内红地，以青地作碾玉",
+          "scope": "",
+          "alternative_group": "E"
+        },
+        "original_record": "CH-039/relations/23",
+        "audit_note": "本轮规则回查：目标类别为装饰制度，与采用设色方法预期的设色方法不一致，需复核语义。",
+        "active": true
+      },
+      "reason": "本轮发现关系类别越界；保留原候选并单独待确认"
+    },
+    {
+      "seq": 22,
+      "at": "2026-11-08T12:43:40.666967+00:00",
+      "kind": "edge",
+      "id": "A66485a0cc0e9fdf9f252",
+      "before": {
+        "id": "A66485a0cc0e9fdf9f252",
+        "sid": "CH-048",
+        "source": "E00fee5bc91a962433fb5",
+        "target": "Ef412305975819b1d373b",
+        "kind": "relations",
+        "predicate": "采用技法",
+        "value": "",
+        "status": "候选",
+        "pending_ids": [],
+        "entry_pending_ids": [],
+        "evidence": [
+          {
+            "source_sid": "CH-048",
+            "source_field": "text",
+            "quote": "当心又用绿叠晕者，深色在内",
+            "occurrence": 1,
+            "start": 26,
+            "end": 39,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "当心又用绿叠晕者",
+          "scope": "当心",
+          "alternative_group": ""
+        },
+        "original_record": "CH-048/relations/2",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": true
+      },
+      "after": {
+        "id": "A66485a0cc0e9fdf9f252",
+        "sid": "CH-048",
+        "source": "E00fee5bc91a962433fb5",
+        "target": "Ef412305975819b1d373b",
+        "kind": "relations",
+        "predicate": "采用技法",
+        "value": "",
+        "status": "待确认",
+        "pending_ids": [],
+        "entry_pending_ids": [],
+        "evidence": [
+          {
+            "source_sid": "CH-048",
+            "source_field": "text",
+            "quote": "当心又用绿叠晕者，深色在内",
+            "occurrence": 1,
+            "start": 26,
+            "end": 39,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "当心又用绿叠晕者",
+          "scope": "当心",
+          "alternative_group": ""
+        },
+        "original_record": "CH-048/relations/2",
+        "audit_note": "本轮规则回查：目标类别为步骤，与采用技法预期的技法不一致，需复核语义。",
+        "active": true
+      },
+      "reason": "本轮发现关系类别越界；保留原候选并单独待确认"
+    },
+    {
+      "seq": 21,
+      "at": "2026-11-08T12:36:50.763856+00:00",
+      "kind": "initial-correction",
+      "id": "FIX-R-9d3800edcb3edea8",
+      "before": null,
+      "after": {
+        "id": "FIX-R-9d3800edcb3edea8",
+        "source": "Eb009f3adadd032e07698",
+        "target": "E273774af1a5ebdb3ccbf",
+        "predicate": "对晕",
+        "sid": "CH-028",
+        "kind": "relations",
+        "status": "本轮原文核验",
+        "evidence": [
+          {
+            "source_sid": "CH-028",
+            "source_field": "text",
+            "quote": "外留空缘，与外缘道对晕",
+            "start": 73,
+            "end": 84,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {},
+        "audit_note": "按老师所提对象关系补齐空缘与外缘道对晕；未展开到梁、栱的交叉配对。",
+        "active": true
+      },
+      "reason": "按老师所提对象关系补齐空缘与外缘道对晕；未展开到梁、栱的交叉配对。"
+    },
+    {
+      "seq": 20,
+      "at": "2026-11-08T12:36:50.763848+00:00",
+      "kind": "initial-correction",
+      "id": "FIX-A-5569f981ed3d95e4",
+      "before": null,
+      "after": {
+        "id": "FIX-A-5569f981ed3d95e4",
+        "kind": "attributes",
+        "sid": "CH-028",
+        "source": "E5ee612e4c76c84835458",
+        "target": null,
+        "predicate": "原文比例",
+        "value": "三分之一",
+        "status": "本轮原文核验",
+        "evidence": [
+          {
+            "source_sid": "CH-028",
+            "source_field": "text",
+            "quote": "其空缘之广，减外缘道三分之一",
+            "occurrence": 1,
+            "start": 85,
+            "end": 99,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {},
+        "audit_note": "仅记录原文运算与比例，不据此裁定争议中的最终宽度比。"
+      },
+      "reason": "仅记录原文运算与比例，不据此裁定争议中的最终宽度比。"
+    },
+    {
+      "seq": 19,
+      "at": "2026-11-08T12:36:50.763838+00:00",
+      "kind": "initial-correction",
+      "id": "FIX-A-2f7cd3f6e3516d3b",
+      "before": null,
+      "after": {
+        "id": "FIX-A-2f7cd3f6e3516d3b",
+        "kind": "attributes",
+        "sid": "CH-028",
+        "source": "E5ee612e4c76c84835458",
+        "target": null,
+        "predicate": "运算词",
+        "value": "减",
+        "status": "本轮原文核验",
+        "evidence": [
+          {
+            "source_sid": "CH-028",
+            "source_field": "text",
+            "quote": "其空缘之广，减外缘道三分之一",
+            "occurrence": 1,
+            "start": 85,
+            "end": 99,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {},
+        "audit_note": "仅记录原文运算与比例，不据此裁定争议中的最终宽度比。"
+      },
+      "reason": "仅记录原文运算与比例，不据此裁定争议中的最终宽度比。"
+    },
+    {
+      "seq": 18,
+      "at": "2026-11-08T12:36:50.763812+00:00",
+      "kind": "initial-correction",
+      "id": "A527601fb9e028bb1ce83",
+      "before": {
+        "id": "A527601fb9e028bb1ce83",
+        "sid": "CH-028",
+        "source": "E0bcc46a3b3be4ec2fdb1",
+        "target": "E273774af1a5ebdb3ccbf",
+        "kind": "relations",
+        "predicate": "参照对象",
+        "value": "",
+        "status": "候选",
+        "pending_ids": [],
+        "entry_pending_ids": [
+          49
+        ],
+        "evidence": [
+          {
+            "source_sid": "CH-028",
+            "source_field": "text",
+            "quote": "枓栱之类，其广一分°",
+            "occurrence": 1,
+            "start": 44,
+            "end": 54,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "",
+          "alternative_group": ""
+        },
+        "original_record": "CH-028/relations/10",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": true
+      },
+      "after": {
+        "id": "A527601fb9e028bb1ce83",
+        "sid": "CH-028",
+        "source": "E0bcc46a3b3be4ec2fdb1",
+        "target": "E273774af1a5ebdb3ccbf",
+        "kind": "relations",
+        "predicate": "参照对象",
+        "value": "",
+        "status": "候选",
+        "pending_ids": [],
+        "entry_pending_ids": [
+          49
+        ],
+        "evidence": [
+          {
+            "source_sid": "CH-028",
+            "source_field": "text",
+            "quote": "枓栱之类，其广一分°",
+            "occurrence": 1,
+            "start": 44,
+            "end": 54,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "",
+          "alternative_group": ""
+        },
+        "original_record": "CH-028/relations/10",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": false
+      },
+      "reason": "绝对尺寸中的被测缘道不是相对尺寸的参照对象，撤回混用关系"
+    },
+    {
+      "seq": 17,
+      "at": "2026-11-08T12:36:50.763794+00:00",
+      "kind": "initial-correction",
+      "id": "A14e772c609427306f6d8",
+      "before": {
+        "id": "A14e772c609427306f6d8",
+        "sid": "CH-028",
+        "source": "E0bcc46a3b3be4ec2fdb1",
+        "target": "Eb7b92b6f0d41a7a915cd",
+        "kind": "relations",
+        "predicate": "约束对象",
+        "value": "",
+        "status": "候选",
+        "pending_ids": [],
+        "entry_pending_ids": [
+          49
+        ],
+        "evidence": [
+          {
+            "source_sid": "CH-028",
+            "source_field": "text",
+            "quote": "枓栱之类，其广一分°",
+            "occurrence": 1,
+            "start": 44,
+            "end": 54,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "",
+          "alternative_group": ""
+        },
+        "original_record": "CH-028/relations/9",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": true
+      },
+      "after": {
+        "id": "A14e772c609427306f6d8",
+        "sid": "CH-028",
+        "source": "E0bcc46a3b3be4ec2fdb1",
+        "target": "E273774af1a5ebdb3ccbf",
+        "kind": "relations",
+        "predicate": "约束对象",
+        "value": "",
+        "status": "本轮原文核验",
+        "pending_ids": [],
+        "entry_pending_ids": [
+          49
+        ],
+        "evidence": [
+          {
+            "source_sid": "CH-028",
+            "source_field": "text",
+            "quote": "枓栱之类，其广一分°",
+            "occurrence": 1,
+            "start": 44,
+            "end": 54,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "枓栱的缘道宽度",
+          "alternative_group": ""
+        },
+        "original_record": "CH-028/relations/9",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": true
+      },
+      "reason": "尺寸约束落到缘道宽度，并保留对应构件范围"
+    },
+    {
+      "seq": 16,
+      "at": "2026-11-08T12:36:50.763761+00:00",
+      "kind": "initial-correction",
+      "id": "A0243d39cd4797198b085",
+      "before": {
+        "id": "A0243d39cd4797198b085",
+        "sid": "CH-028",
+        "source": "E5764a43b68b2c7b9afde",
+        "target": "E273774af1a5ebdb3ccbf",
+        "kind": "relations",
+        "predicate": "参照对象",
+        "value": "",
+        "status": "候选",
+        "pending_ids": [],
+        "entry_pending_ids": [
+          49
+        ],
+        "evidence": [
+          {
+            "source_sid": "CH-028",
+            "source_field": "text",
+            "quote": "梁栿之类缘道，其广二分°",
+            "occurrence": 1,
+            "start": 31,
+            "end": 43,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "",
+          "alternative_group": ""
+        },
+        "original_record": "CH-028/relations/8",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": true
+      },
+      "after": {
+        "id": "A0243d39cd4797198b085",
+        "sid": "CH-028",
+        "source": "E5764a43b68b2c7b9afde",
+        "target": "E273774af1a5ebdb3ccbf",
+        "kind": "relations",
+        "predicate": "参照对象",
+        "value": "",
+        "status": "候选",
+        "pending_ids": [],
+        "entry_pending_ids": [
+          49
+        ],
+        "evidence": [
+          {
+            "source_sid": "CH-028",
+            "source_field": "text",
+            "quote": "梁栿之类缘道，其广二分°",
+            "occurrence": 1,
+            "start": 31,
+            "end": 43,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "",
+          "alternative_group": ""
+        },
+        "original_record": "CH-028/relations/8",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": false
+      },
+      "reason": "绝对尺寸中的被测缘道不是相对尺寸的参照对象，撤回混用关系"
+    },
+    {
+      "seq": 15,
+      "at": "2026-11-08T12:36:50.763748+00:00",
+      "kind": "initial-correction",
+      "id": "A0aa546cffef79f4f4457",
+      "before": {
+        "id": "A0aa546cffef79f4f4457",
+        "sid": "CH-028",
+        "source": "E5764a43b68b2c7b9afde",
+        "target": "E9f666e022177ebb8f52d",
+        "kind": "relations",
+        "predicate": "约束对象",
+        "value": "",
+        "status": "候选",
+        "pending_ids": [],
+        "entry_pending_ids": [
+          49
+        ],
+        "evidence": [
+          {
+            "source_sid": "CH-028",
+            "source_field": "text",
+            "quote": "梁栿之类缘道，其广二分°",
+            "occurrence": 1,
+            "start": 31,
+            "end": 43,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "",
+          "alternative_group": ""
+        },
+        "original_record": "CH-028/relations/7",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": true
+      },
+      "after": {
+        "id": "A0aa546cffef79f4f4457",
+        "sid": "CH-028",
+        "source": "E5764a43b68b2c7b9afde",
+        "target": "E273774af1a5ebdb3ccbf",
+        "kind": "relations",
+        "predicate": "约束对象",
+        "value": "",
+        "status": "本轮原文核验",
+        "pending_ids": [],
+        "entry_pending_ids": [
+          49
+        ],
+        "evidence": [
+          {
+            "source_sid": "CH-028",
+            "source_field": "text",
+            "quote": "梁栿之类缘道，其广二分°",
+            "occurrence": 1,
+            "start": 31,
+            "end": 43,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "梁栿的缘道宽度",
+          "alternative_group": ""
+        },
+        "original_record": "CH-028/relations/7",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": true
+      },
+      "reason": "尺寸约束落到缘道宽度，并保留对应构件范围"
+    },
+    {
+      "seq": 14,
+      "at": "2026-11-08T12:36:50.763714+00:00",
+      "kind": "initial-correction",
+      "id": "Ef83c8051861e06367623",
+      "before": {
+        "id": "Ef83c8051861e06367623",
+        "name": "旁赭笔量留粉道",
+        "group": "工艺与步骤",
+        "subtype": "步骤",
+        "sids": [
+          "CH-045"
+        ],
+        "mentions": [
+          {
+            "sid": "CH-045",
+            "local_id": "e4",
+            "evidence": [
+              {
+                "source_sid": "CH-045",
+                "source_field": "text",
+                "quote": "旁赭笔量留粉道",
+                "occurrence": 1,
+                "start": 10,
+                "end": 17,
+                "span_valid": true
+              }
+            ],
+            "note": "以原文动宾短语为步骤短名称"
+          }
+        ],
+        "attributes": [
+          {
+            "id": "Aa9a62cc54a8eed30d3d5",
+            "sid": "CH-045",
+            "source": "Ef83c8051861e06367623",
+            "target": null,
+            "kind": "attributes",
+            "predicate": "位置限定",
+            "value": "旁（依傍华文边线）",
+            "status": "候选",
+            "pending_ids": [],
+            "entry_pending_ids": [],
+            "evidence": [
+              {
+                "source_sid": "CH-045",
+                "source_field": "text",
+                "quote": "旁赭笔量留粉道",
+                "occurrence": 1,
+                "start": 10,
+                "end": 17,
+                "span_valid": true
+              }
+            ],
+            "qualifiers": {},
+            "original_record": "CH-045/attributes/0",
+            "audit_note": "原模型候选；不代表本轮逐断言审核"
+          }
+        ],
+        "active": true
+      },
+      "after": {
+        "id": "Ef83c8051861e06367623",
+        "name": "以赭色旁描并量留粉道",
+        "group": "工艺与步骤",
+        "subtype": "步骤",
+        "sids": [
+          "CH-045"
+        ],
+        "mentions": [
+          {
+            "sid": "CH-045",
+            "local_id": "e4",
+            "evidence": [
+              {
+                "source_sid": "CH-045",
+                "source_field": "text",
+                "quote": "旁赭笔量留粉道",
+                "occurrence": 1,
+                "start": 10,
+                "end": 17,
+                "span_valid": true
+              }
+            ],
+            "note": "以原文动宾短语为步骤短名称"
+          }
+        ],
+        "attributes": [
+          {
+            "id": "Aa9a62cc54a8eed30d3d5",
+            "sid": "CH-045",
+            "source": "Ef83c8051861e06367623",
+            "target": null,
+            "kind": "attributes",
+            "predicate": "位置限定",
+            "value": "旁（依傍华文边线）",
+            "status": "候选",
+            "pending_ids": [],
+            "entry_pending_ids": [],
+            "evidence": [
+              {
+                "source_sid": "CH-045",
+                "source_field": "text",
+                "quote": "旁赭笔量留粉道",
+                "occurrence": 1,
+                "start": 10,
+                "end": 17,
+                "span_valid": true
+              }
+            ],
+            "qualifiers": {},
+            "original_record": "CH-045/attributes/0",
+            "audit_note": "原模型候选；不代表本轮逐断言审核"
+          }
+        ],
+        "active": true
+      },
+      "reason": "步骤/规定采用语义名称，原文证据仍保留赭笔写法"
+    },
+    {
+      "seq": 13,
+      "at": "2026-11-08T12:36:50.763682+00:00",
+      "kind": "initial-correction",
+      "id": "E4f81d0302213b9ea1dc1",
+      "before": {
+        "id": "E4f81d0302213b9ea1dc1",
+        "name": "赭笔描飞走之物",
+        "group": "工艺与步骤",
+        "subtype": "步骤",
+        "sids": [
+          "CH-031"
+        ],
+        "mentions": [
+          {
+            "sid": "CH-031",
+            "local_id": "e8",
+            "evidence": [
+              {
+                "source_sid": "CH-031",
+                "source_field": "text",
+                "quote": "其飞、走之物，用赭笔描之于白粉地上",
+                "occurrence": 1,
+                "start": 30,
+                "end": 47,
+                "span_valid": true
+              }
+            ],
+            "note": "据「用赭笔描之于白粉地上」规范为步骤短名称"
+          }
+        ],
+        "attributes": [
+          {
+            "id": "Aeed0ef953e41957f153a",
+            "sid": "CH-031",
+            "source": "E4f81d0302213b9ea1dc1",
+            "target": null,
+            "kind": "attributes",
+            "predicate": "位置限定",
+            "value": "白粉地上",
+            "status": "候选",
+            "pending_ids": [],
+            "entry_pending_ids": [],
+            "evidence": [
+              {
+                "source_sid": "CH-031",
+                "source_field": "text",
+                "quote": "其飞、走之物，用赭笔描之于白粉地上",
+                "occurrence": 1,
+                "start": 30,
+                "end": 47,
+                "span_valid": true
+              }
+            ],
+            "qualifiers": {},
+            "original_record": "CH-031/attributes/0",
+            "audit_note": "原模型候选；不代表本轮逐断言审核"
+          }
+        ],
+        "active": true
+      },
+      "after": {
+        "id": "E4f81d0302213b9ea1dc1",
+        "name": "赭色描飞走之物",
+        "group": "工艺与步骤",
+        "subtype": "步骤",
+        "sids": [
+          "CH-031"
+        ],
+        "mentions": [
+          {
+            "sid": "CH-031",
+            "local_id": "e8",
+            "evidence": [
+              {
+                "source_sid": "CH-031",
+                "source_field": "text",
+                "quote": "其飞、走之物，用赭笔描之于白粉地上",
+                "occurrence": 1,
+                "start": 30,
+                "end": 47,
+                "span_valid": true
+              }
+            ],
+            "note": "据「用赭笔描之于白粉地上」规范为步骤短名称"
+          }
+        ],
+        "attributes": [
+          {
+            "id": "Aeed0ef953e41957f153a",
+            "sid": "CH-031",
+            "source": "E4f81d0302213b9ea1dc1",
+            "target": null,
+            "kind": "attributes",
+            "predicate": "位置限定",
+            "value": "白粉地上",
+            "status": "候选",
+            "pending_ids": [],
+            "entry_pending_ids": [],
+            "evidence": [
+              {
+                "source_sid": "CH-031",
+                "source_field": "text",
+                "quote": "其飞、走之物，用赭笔描之于白粉地上",
+                "occurrence": 1,
+                "start": 30,
+                "end": 47,
+                "span_valid": true
+              }
+            ],
+            "qualifiers": {},
+            "original_record": "CH-031/attributes/0",
+            "audit_note": "原模型候选；不代表本轮逐断言审核"
+          }
+        ],
+        "active": true
+      },
+      "reason": "步骤/规定采用语义名称，原文证据仍保留赭笔写法"
+    },
+    {
+      "seq": 12,
+      "at": "2026-11-08T12:36:50.763662+00:00",
+      "kind": "initial-correction",
+      "id": "E8e7b576a309f10637565",
+      "before": {
+        "id": "E8e7b576a309f10637565",
+        "name": "五彩装及叠晕碾玉装赭笔描画规定",
+        "group": "规制与约束",
+        "subtype": "施作规定",
+        "sids": [
+          "CH-009"
+        ],
+        "mentions": [
+          {
+            "sid": "CH-009",
+            "local_id": "e16",
+            "evidence": [
+              {
+                "source_sid": "CH-009",
+                "source_field": "text",
+                "quote": "应用五彩装及叠晕碾玉装者，并以赭笔描画。",
+                "occurrence": 1,
+                "start": 45,
+                "end": 65,
+                "span_valid": true
+              }
+            ],
+            "note": "据“应用……者，并以赭笔描画”设规定短名"
+          }
+        ],
+        "attributes": [
+          {
+            "id": "A7da890701db261864c62",
+            "sid": "CH-009",
+            "source": "E8e7b576a309f10637565",
+            "target": null,
+            "kind": "attributes",
+            "predicate": "适用条件",
+            "value": "应用五彩装及叠晕碾玉装者",
+            "status": "候选",
+            "pending_ids": [],
+            "entry_pending_ids": [
+              13,
+              14,
+              15
+            ],
+            "evidence": [
+              {
+                "source_sid": "CH-009",
+                "source_field": "text",
+                "quote": "应用五彩装及叠晕碾玉装者，并以赭笔描画。",
+                "occurrence": 1,
+                "start": 45,
+                "end": 65,
+                "span_valid": true
+              }
+            ],
+            "qualifiers": {},
+            "original_record": "CH-009/attributes/3",
+            "audit_note": "原模型候选；不代表本轮逐断言审核"
+          }
+        ],
+        "active": true
+      },
+      "after": {
+        "id": "E8e7b576a309f10637565",
+        "name": "五彩装及叠晕碾玉装赭色描画规定",
+        "group": "规制与约束",
+        "subtype": "施作规定",
+        "sids": [
+          "CH-009"
+        ],
+        "mentions": [
+          {
+            "sid": "CH-009",
+            "local_id": "e16",
+            "evidence": [
+              {
+                "source_sid": "CH-009",
+                "source_field": "text",
+                "quote": "应用五彩装及叠晕碾玉装者，并以赭笔描画。",
+                "occurrence": 1,
+                "start": 45,
+                "end": 65,
+                "span_valid": true
+              }
+            ],
+            "note": "据“应用……者，并以赭笔描画”设规定短名"
+          }
+        ],
+        "attributes": [
+          {
+            "id": "A7da890701db261864c62",
+            "sid": "CH-009",
+            "source": "E8e7b576a309f10637565",
+            "target": null,
+            "kind": "attributes",
+            "predicate": "适用条件",
+            "value": "应用五彩装及叠晕碾玉装者",
+            "status": "候选",
+            "pending_ids": [],
+            "entry_pending_ids": [
+              13,
+              14,
+              15
+            ],
+            "evidence": [
+              {
+                "source_sid": "CH-009",
+                "source_field": "text",
+                "quote": "应用五彩装及叠晕碾玉装者，并以赭笔描画。",
+                "occurrence": 1,
+                "start": 45,
+                "end": 65,
+                "span_valid": true
+              }
+            ],
+            "qualifiers": {},
+            "original_record": "CH-009/attributes/3",
+            "audit_note": "原模型候选；不代表本轮逐断言审核"
+          }
+        ],
+        "active": true
+      },
+      "reason": "步骤/规定采用语义名称，原文证据仍保留赭笔写法"
+    },
+    {
+      "seq": 11,
+      "at": "2026-11-08T12:36:50.763632+00:00",
+      "kind": "initial-correction",
+      "id": "E8beecd26d2a3d5d49269",
+      "before": {
+        "id": "E8beecd26d2a3d5d49269",
+        "name": "赭笔描画",
+        "group": "工艺与步骤",
+        "subtype": "步骤",
+        "sids": [
+          "CH-009"
+        ],
+        "mentions": [
+          {
+            "sid": "CH-009",
+            "local_id": "e9",
+            "evidence": [
+              {
+                "source_sid": "CH-009",
+                "source_field": "text",
+                "quote": "应用五彩装及叠晕碾玉装者，并以赭笔描画。",
+                "occurrence": 1,
+                "start": 45,
+                "end": 65,
+                "span_valid": true
+              }
+            ],
+            "note": "由“以赭笔描画”概括为工序短名"
+          }
+        ],
+        "attributes": [],
+        "active": true
+      },
+      "after": {
+        "id": "E8beecd26d2a3d5d49269",
+        "name": "赭色描画",
+        "group": "工艺与步骤",
+        "subtype": "步骤",
+        "sids": [
+          "CH-009"
+        ],
+        "mentions": [
+          {
+            "sid": "CH-009",
+            "local_id": "e9",
+            "evidence": [
+              {
+                "source_sid": "CH-009",
+                "source_field": "text",
+                "quote": "应用五彩装及叠晕碾玉装者，并以赭笔描画。",
+                "occurrence": 1,
+                "start": 45,
+                "end": 65,
+                "span_valid": true
+              }
+            ],
+            "note": "由“以赭笔描画”概括为工序短名"
+          }
+        ],
+        "attributes": [],
+        "active": true
+      },
+      "reason": "步骤/规定采用语义名称，原文证据仍保留赭笔写法"
+    },
+    {
+      "seq": 10,
+      "at": "2026-11-08T12:36:50.763625+00:00",
+      "kind": "initial-correction",
+      "id": "FIX-R-f3ad61aa0ab20483",
+      "before": null,
+      "after": {
+        "id": "FIX-R-f3ad61aa0ab20483",
+        "source": "Ef83c8051861e06367623",
+        "target": "FIX-E-897d9e07deb6bc92",
+        "predicate": "使用色彩",
+        "sid": "CH-045",
+        "kind": "relations",
+        "status": "本轮原文核验",
+        "evidence": [
+          {
+            "source_sid": "CH-045",
+            "source_field": "text",
+            "quote": "旁赭笔量留粉道",
+            "occurrence": 1,
+            "start": 10,
+            "end": 17,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "",
+          "alternative_group": ""
+        },
+        "audit_note": "依据本轮用户要求，将赭笔拆为工具“笔”与色彩“赭”；原文保留，不确认具体颜料矿物。",
+        "active": true
+      },
+      "reason": "依据本轮用户要求，将赭笔拆为工具“笔”与色彩“赭”；原文保留，不确认具体颜料矿物。"
+    },
+    {
+      "seq": 9,
+      "at": "2026-11-08T12:36:50.763616+00:00",
+      "kind": "initial-correction",
+      "id": "FIX-R-101cae183f5a1046",
+      "before": null,
+      "after": {
+        "id": "FIX-R-101cae183f5a1046",
+        "source": "Ef83c8051861e06367623",
+        "target": "FIX-E-145531a38375ee78",
+        "predicate": "使用工具",
+        "sid": "CH-045",
+        "kind": "relations",
+        "status": "本轮原文核验",
+        "evidence": [
+          {
+            "source_sid": "CH-045",
+            "source_field": "text",
+            "quote": "旁赭笔量留粉道",
+            "occurrence": 1,
+            "start": 10,
+            "end": 17,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "",
+          "alternative_group": ""
+        },
+        "audit_note": "依据本轮用户要求，将赭笔拆为工具“笔”与色彩“赭”；原文保留，不确认具体颜料矿物。",
+        "active": true
+      },
+      "reason": "依据本轮用户要求，将赭笔拆为工具“笔”与色彩“赭”；原文保留，不确认具体颜料矿物。"
+    },
+    {
+      "seq": 8,
+      "at": "2026-11-08T12:36:50.763603+00:00",
+      "kind": "initial-correction",
+      "id": "A269047b42bbc98be4fa5",
+      "before": {
+        "id": "A269047b42bbc98be4fa5",
+        "sid": "CH-045",
+        "source": "Ef83c8051861e06367623",
+        "target": "E0fef223d48c67f0fe2b5",
+        "kind": "relations",
+        "predicate": "使用工具",
+        "value": "",
+        "status": "候选",
+        "pending_ids": [],
+        "entry_pending_ids": [],
+        "evidence": [
+          {
+            "source_sid": "CH-045",
+            "source_field": "text",
+            "quote": "旁赭笔量留粉道",
+            "occurrence": 1,
+            "start": 10,
+            "end": 17,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "",
+          "alternative_group": ""
+        },
+        "original_record": "CH-045/relations/1",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": true
+      },
+      "after": {
+        "id": "A269047b42bbc98be4fa5",
+        "sid": "CH-045",
+        "source": "Ef83c8051861e06367623",
+        "target": "E0fef223d48c67f0fe2b5",
+        "kind": "relations",
+        "predicate": "使用工具",
+        "value": "",
+        "status": "候选",
+        "pending_ids": [],
+        "entry_pending_ids": [],
+        "evidence": [
+          {
+            "source_sid": "CH-045",
+            "source_field": "text",
+            "quote": "旁赭笔量留粉道",
+            "occurrence": 1,
+            "start": 10,
+            "end": 17,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "",
+          "alternative_group": ""
+        },
+        "original_record": "CH-045/relations/1",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": false
+      },
+      "reason": "撤回把赭笔整体当作工具的关系"
+    },
+    {
+      "seq": 7,
+      "at": "2026-11-08T12:36:50.763576+00:00",
+      "kind": "initial-correction",
+      "id": "FIX-R-bf1bf238dd68ec33",
+      "before": null,
+      "after": {
+        "id": "FIX-R-bf1bf238dd68ec33",
+        "source": "E4f81d0302213b9ea1dc1",
+        "target": "FIX-E-897d9e07deb6bc92",
+        "predicate": "使用色彩",
+        "sid": "CH-031",
+        "kind": "relations",
+        "status": "本轮原文核验",
+        "evidence": [
+          {
+            "source_sid": "CH-031",
+            "source_field": "text",
+            "quote": "其飞、走之物，用赭笔描之于白粉地上",
+            "occurrence": 1,
+            "start": 30,
+            "end": 47,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "",
+          "alternative_group": ""
+        },
+        "audit_note": "依据本轮用户要求，将赭笔拆为工具“笔”与色彩“赭”；原文保留，不确认具体颜料矿物。",
+        "active": true
+      },
+      "reason": "依据本轮用户要求，将赭笔拆为工具“笔”与色彩“赭”；原文保留，不确认具体颜料矿物。"
+    },
+    {
+      "seq": 6,
+      "at": "2026-11-08T12:36:50.763567+00:00",
+      "kind": "initial-correction",
+      "id": "FIX-R-b14f034f9987f948",
+      "before": null,
+      "after": {
+        "id": "FIX-R-b14f034f9987f948",
+        "source": "E4f81d0302213b9ea1dc1",
+        "target": "FIX-E-145531a38375ee78",
+        "predicate": "使用工具",
+        "sid": "CH-031",
+        "kind": "relations",
+        "status": "本轮原文核验",
+        "evidence": [
+          {
+            "source_sid": "CH-031",
+            "source_field": "text",
+            "quote": "其飞、走之物，用赭笔描之于白粉地上",
+            "occurrence": 1,
+            "start": 30,
+            "end": 47,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "",
+          "alternative_group": ""
+        },
+        "audit_note": "依据本轮用户要求，将赭笔拆为工具“笔”与色彩“赭”；原文保留，不确认具体颜料矿物。",
+        "active": true
+      },
+      "reason": "依据本轮用户要求，将赭笔拆为工具“笔”与色彩“赭”；原文保留，不确认具体颜料矿物。"
+    },
+    {
+      "seq": 5,
+      "at": "2026-11-08T12:36:50.763553+00:00",
+      "kind": "initial-correction",
+      "id": "A3a6c7afe00dc0b2955f0",
+      "before": {
+        "id": "A3a6c7afe00dc0b2955f0",
+        "sid": "CH-031",
+        "source": "E4f81d0302213b9ea1dc1",
+        "target": "E0fef223d48c67f0fe2b5",
+        "kind": "relations",
+        "predicate": "使用工具",
+        "value": "",
+        "status": "候选",
+        "pending_ids": [],
+        "entry_pending_ids": [],
+        "evidence": [
+          {
+            "source_sid": "CH-031",
+            "source_field": "text",
+            "quote": "其飞、走之物，用赭笔描之于白粉地上",
+            "occurrence": 1,
+            "start": 30,
+            "end": 47,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "",
+          "alternative_group": ""
+        },
+        "original_record": "CH-031/relations/8",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": true
+      },
+      "after": {
+        "id": "A3a6c7afe00dc0b2955f0",
+        "sid": "CH-031",
+        "source": "E4f81d0302213b9ea1dc1",
+        "target": "E0fef223d48c67f0fe2b5",
+        "kind": "relations",
+        "predicate": "使用工具",
+        "value": "",
+        "status": "候选",
+        "pending_ids": [],
+        "entry_pending_ids": [],
+        "evidence": [
+          {
+            "source_sid": "CH-031",
+            "source_field": "text",
+            "quote": "其飞、走之物，用赭笔描之于白粉地上",
+            "occurrence": 1,
+            "start": 30,
+            "end": 47,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "",
+          "alternative_group": ""
+        },
+        "original_record": "CH-031/relations/8",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": false
+      },
+      "reason": "撤回把赭笔整体当作工具的关系"
+    },
+    {
+      "seq": 4,
+      "at": "2026-11-08T12:36:50.763542+00:00",
+      "kind": "initial-correction",
+      "id": "FIX-R-20b45a58cfbd1056",
+      "before": null,
+      "after": {
+        "id": "FIX-R-20b45a58cfbd1056",
+        "source": "E8beecd26d2a3d5d49269",
+        "target": "FIX-E-897d9e07deb6bc92",
+        "predicate": "使用色彩",
+        "sid": "CH-009",
+        "kind": "relations",
+        "status": "本轮原文核验",
+        "evidence": [
+          {
+            "source_sid": "CH-009",
+            "source_field": "text",
+            "quote": "应用五彩装及叠晕碾玉装者，并以赭笔描画。",
+            "occurrence": 1,
+            "start": 45,
+            "end": 65,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "",
+          "alternative_group": ""
+        },
+        "audit_note": "依据本轮用户要求，将赭笔拆为工具“笔”与色彩“赭”；原文保留，不确认具体颜料矿物。",
+        "active": true
+      },
+      "reason": "依据本轮用户要求，将赭笔拆为工具“笔”与色彩“赭”；原文保留，不确认具体颜料矿物。"
+    },
+    {
+      "seq": 3,
+      "at": "2026-11-08T12:36:50.763499+00:00",
+      "kind": "initial-correction",
+      "id": "FIX-R-575737caed887752",
+      "before": null,
+      "after": {
+        "id": "FIX-R-575737caed887752",
+        "source": "E8beecd26d2a3d5d49269",
+        "target": "FIX-E-145531a38375ee78",
+        "predicate": "使用工具",
+        "sid": "CH-009",
+        "kind": "relations",
+        "status": "本轮原文核验",
+        "evidence": [
+          {
+            "source_sid": "CH-009",
+            "source_field": "text",
+            "quote": "应用五彩装及叠晕碾玉装者，并以赭笔描画。",
+            "occurrence": 1,
+            "start": 45,
+            "end": 65,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "",
+          "alternative_group": ""
+        },
+        "audit_note": "依据本轮用户要求，将赭笔拆为工具“笔”与色彩“赭”；原文保留，不确认具体颜料矿物。",
+        "active": true
+      },
+      "reason": "依据本轮用户要求，将赭笔拆为工具“笔”与色彩“赭”；原文保留，不确认具体颜料矿物。"
+    },
+    {
+      "seq": 2,
+      "at": "2026-11-08T12:36:50.763479+00:00",
+      "kind": "initial-correction",
+      "id": "A48dead007fbb01064584",
+      "before": {
+        "id": "A48dead007fbb01064584",
+        "sid": "CH-009",
+        "source": "E8beecd26d2a3d5d49269",
+        "target": "E0fef223d48c67f0fe2b5",
+        "kind": "relations",
+        "predicate": "使用工具",
+        "value": "",
+        "status": "候选",
+        "pending_ids": [],
+        "entry_pending_ids": [
+          13,
+          14,
+          15
+        ],
+        "evidence": [
+          {
+            "source_sid": "CH-009",
+            "source_field": "text",
+            "quote": "应用五彩装及叠晕碾玉装者，并以赭笔描画。",
+            "occurrence": 1,
+            "start": 45,
+            "end": 65,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "",
+          "alternative_group": ""
+        },
+        "original_record": "CH-009/relations/7",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": true
+      },
+      "after": {
+        "id": "A48dead007fbb01064584",
+        "sid": "CH-009",
+        "source": "E8beecd26d2a3d5d49269",
+        "target": "E0fef223d48c67f0fe2b5",
+        "kind": "relations",
+        "predicate": "使用工具",
+        "value": "",
+        "status": "候选",
+        "pending_ids": [],
+        "entry_pending_ids": [
+          13,
+          14,
+          15
+        ],
+        "evidence": [
+          {
+            "source_sid": "CH-009",
+            "source_field": "text",
+            "quote": "应用五彩装及叠晕碾玉装者，并以赭笔描画。",
+            "occurrence": 1,
+            "start": 45,
+            "end": 65,
+            "span_valid": true
+          }
+        ],
+        "qualifiers": {
+          "condition": "",
+          "scope": "",
+          "alternative_group": ""
+        },
+        "original_record": "CH-009/relations/7",
+        "audit_note": "原模型候选；不代表本轮逐断言审核",
+        "active": false
+      },
+      "reason": "撤回把赭笔整体当作工具的关系"
+    },
+    {
+      "seq": 1,
+      "at": "2026-11-08T12:36:50.760825+00:00",
+      "kind": "initial-correction",
+      "id": "E0fef223d48c67f0fe2b5",
+      "before": {
+        "id": "E0fef223d48c67f0fe2b5",
+        "name": "赭笔",
+        "group": "绘制与加工工具",
+        "subtype": "绘制工具",
+        "sids": [
+          "CH-009",
+          "CH-031",
+          "CH-045"
+        ],
+        "mentions": [
+          {
+            "sid": "CH-009",
+            "local_id": "e10",
+            "evidence": [
+              {
+                "source_sid": "CH-009",
+                "source_field": "text",
+                "quote": "应用五彩装及叠晕碾玉装者，并以赭笔描画。",
+                "occurrence": 1,
+                "start": 45,
+                "end": 65,
+                "span_valid": true
+              }
+            ],
+            "note": "原文作“赭笔”"
+          },
+          {
+            "sid": "CH-031",
+            "local_id": "e9",
+            "evidence": [
+              {
+                "source_sid": "CH-031",
+                "source_field": "text",
+                "quote": "其飞、走之物，用赭笔描之于白粉地上",
+                "occurrence": 1,
+                "start": 30,
+                "end": 47,
+                "span_valid": true
+              }
+            ],
+            "note": ""
+          },
+          {
+            "sid": "CH-045",
+            "local_id": "e3",
+            "evidence": [
+              {
+                "source_sid": "CH-045",
+                "source_field": "text",
+                "quote": "旁赭笔量留粉道",
+                "occurrence": 1,
+                "start": 10,
+                "end": 17,
+                "span_valid": true
+              }
+            ],
+            "note": ""
+          }
+        ],
+        "attributes": [],
+        "active": true
+      },
+      "after": {
+        "id": "E0fef223d48c67f0fe2b5",
+        "name": "赭笔",
+        "group": "绘制与加工工具",
+        "subtype": "绘制工具",
+        "sids": [
+          "CH-009",
+          "CH-031",
+          "CH-045"
+        ],
+        "mentions": [
+          {
+            "sid": "CH-009",
+            "local_id": "e10",
+            "evidence": [
+              {
+                "source_sid": "CH-009",
+                "source_field": "text",
+                "quote": "应用五彩装及叠晕碾玉装者，并以赭笔描画。",
+                "occurrence": 1,
+                "start": 45,
+                "end": 65,
+                "span_valid": true
+              }
+            ],
+            "note": "原文作“赭笔”"
+          },
+          {
+            "sid": "CH-031",
+            "local_id": "e9",
+            "evidence": [
+              {
+                "source_sid": "CH-031",
+                "source_field": "text",
+                "quote": "其飞、走之物，用赭笔描之于白粉地上",
+                "occurrence": 1,
+                "start": 30,
+                "end": 47,
+                "span_valid": true
+              }
+            ],
+            "note": ""
+          },
+          {
+            "sid": "CH-045",
+            "local_id": "e3",
+            "evidence": [
+              {
+                "source_sid": "CH-045",
+                "source_field": "text",
+                "quote": "旁赭笔量留粉道",
+                "occurrence": 1,
+                "start": 10,
+                "end": 17,
+                "span_valid": true
+              }
+            ],
+            "note": ""
+          }
+        ],
+        "attributes": [],
+        "active": false,
+        "review_note": "按用户明确复核要求拆为笔与赭色；赭色不直接等同特定矿物颜料。"
+      },
+      "reason": "按用户明确复核要求拆为笔与赭色；赭色不直接等同特定矿物颜料。"
+    }
+  ],
+  "note": "本次对截图关注点和赭笔做具体核对；229项建立逐项可追踪索引，未将全部问题冒称本轮语义审核通过。"
+}
