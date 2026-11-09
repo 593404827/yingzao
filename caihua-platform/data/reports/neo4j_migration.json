@@ -1,0 +1,21 @@
+{
+  "database": "caihuaplatform",
+  "entities_including_history": 968,
+  "relations_including_history": 1162,
+  "active": {
+    "title": "彩画作知识探索",
+    "version": "可迁移平台初版 / 复核修订 2026-11-08",
+    "database": "caihuaplatform",
+    "node_count": 967,
+    "entity_mentions": 1284,
+    "relation_count": 1157,
+    "attribute_count": 837,
+    "entries": 77,
+    "suspended": 65,
+    "source": "审核后候选_77条.json",
+    "note": "全文候选完整收录；审核状态分层，不等于全部已确认。原caihuatest保留。",
+    "storage": "Neo4j"
+  },
+  "nodes_and_edges_exactly_preserved": true,
+  "source_sqlite_retained": true
+}

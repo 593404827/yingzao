@@ -4,6 +4,9 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT));from backend import storage
 
 def main():
+ from backend.config import load
+ load()
+ if os.environ.get("CAIHUA_KNOWLEDGE_STORE")=="neo4j":raise SystemExit("现已使用Neo4j作为知识主库，无需再次执行旧投影同步。")
  p=argparse.ArgumentParser();p.add_argument('--apply',action='store_true');p.add_argument('--database',default='caihuafull');a=p.parse_args()
  url=os.environ.get('NEO4J_HTTP','http://127.0.0.1:17474').rstrip('/')+'/db/'+a.database+'/tx/commit'
  def query(q,params=None):

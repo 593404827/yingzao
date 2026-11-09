@@ -12,7 +12,7 @@ class App(BaseHTTPRequestHandler):
  def do_GET(self):
   u=urlsplit(self.path);p=u.path;q=parse_qs(u.query)
   try:
-   if p=='/api/status':return self.send({'connected':True,'storage':'SQLite','database':'本机可迁移数据','version':'1.0','persistent':True})
+   if p=='/api/status':return self.send({'connected':True,'storage':('Neo4j' if os.environ.get('CAIHUA_KNOWLEDGE_STORE')=='neo4j' else 'SQLite'),'database':os.environ.get('NEO4J_DATABASE','本机可迁移数据'),'version':'2.0','persistent':True})
    if p=='/api/graph':return self.send(storage.graph())
    if p=='/api/search':return self.send({'nodes':search(storage.graph(),q.get('q',[''])[0])})
    if p=='/api/questions':return self.send([{'id':i,'question':x[0],'kind':x[1]} for i,x in enumerate(QUESTIONS)])
@@ -48,6 +48,7 @@ class App(BaseHTTPRequestHandler):
   except (ValueError,TypeError) as e:return self.send({'error':str(e)},400)
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--port',type=int,default=int(os.environ.get('PORT','18765')));parser.add_argument('--host',default=os.environ.get('HOST','127.0.0.1'));a=parser.parse_args();storage.initialize()
+ if os.environ.get('CAIHUA_KNOWLEDGE_STORE')=='neo4j':storage.graph()
  server=ThreadingHTTPServer((a.host,a.port),App);print(f'彩画作平台 http://{a.host}:{a.port} / 数据: {storage.DB}',flush=True)
  try:server.serve_forever()
  except KeyboardInterrupt:server.server_close()

@@ -1,8 +1,32 @@
 services:
+  neo4j:
+    image: neo4j:5.26-community
+    environment:
+      NEO4J_AUTH: none
+    ports:
+      - "127.0.0.1:17474:7474"
+      - "127.0.0.1:17687:7687"
+    volumes:
+      - neo4j_data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://localhost:7474 || exit 1"]
+      interval: 5s
+      retries: 30
   caihua:
     build: .
+    environment:
+      CAIHUA_KNOWLEDGE_STORE: neo4j
+      NEO4J_HTTP: http://neo4j:7474
+      NEO4J_DATABASE: neo4j
+      HOST: 0.0.0.0
     ports:
       - "127.0.0.1:18765:18765"
     volumes:
       - ./data:/app/data
+      - ./resources:/app/resources
+    depends_on:
+      neo4j:
+        condition: service_healthy
     restart: unless-stopped
+volumes:
+  neo4j_data:
